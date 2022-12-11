@@ -4,7 +4,14 @@ import java.net.URI;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("hello");
+        // test stuff
+        Date avpDate = new Date(1, 28, 2005, 7, 30);
+        Date oosDate = new Date(11, 29, 2022, 29, 5);
+        Date ncaaDate = new Date(12, 10, 2022, 19, 30);
+
+        URI avpURI = new URI("https://www.youtube.com/watch?v=CtDKAvaeF70");
+        URI oosURI = new URI("https://www.youtube.com/watch?v=EqenuNuI16o");
+        URI ncaaURI = new URI("https://www.youtube.com/watch?v=M4ApIzKjRr0");
 
         try {
             URI test = new URI("https://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button");

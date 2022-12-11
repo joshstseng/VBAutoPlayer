@@ -27,6 +27,11 @@ public class Date {
         this.minute = minute;
     }
 
+    // compare year->month->day->hour->minute
+    // TODO
+    public Date returnRecent(Date date1, Date date2) {
+    }
+
     public int getMonth() {
         return month;
     }
