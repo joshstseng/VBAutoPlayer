@@ -4,8 +4,8 @@ import java.net.URI;
 
 public class Video {
 
-    URI uri;
-    Date datePosted;
+    private URI uri;
+    private Date datePosted;
 
     public Video(URI uri, Date datePosted) {
         this.uri = uri;
@@ -45,6 +45,11 @@ public class Video {
             }
         }
         return false;
+    }
+
+    // TODO
+    public static void sortList(Video videoList[]) {
+
     }
 
 

@@ -5,11 +5,11 @@
 
 public class Date {
 
-    int month;
-    int day;
-    int year;
-    int hour;
-    int minute;
+    private int month;
+    private int day;
+    private int year;
+    private int hour;
+    private int minute;
 
     public Date() {
         month = 1;
@@ -27,9 +27,41 @@ public class Date {
         this.minute = minute;
     }
 
-    // compare year->month->day->hour->minute
-    // TODO
-    public Date returnRecent(Date date1, Date date2) {
+    // compare this to input
+    // year->month->day->hour->minute
+    // if exactly same, returns this
+    public Date compareDates(Date date) {
+        if (this.year > date.getYear()) {
+            return this;
+        } else if (this.year < date.getYear()) {
+            return date;
+        } else {
+            if (this.month > date.getMonth()) {
+                return this;
+            } else if (this.month < date.getMonth()) {
+                return date;
+            } else {
+                if (this.day > date.getDay()) {
+                    return this;
+                } else if (this.day < date.getDay()) {
+                    return date;
+                } else {
+                    if (this.hour > date.getHour()) {
+                        return this;
+                    } else if (this.hour < date.getHour()) {
+                        return date;
+                    } else {
+                        if (this.minute > date.getMinute()) {
+                            return this;
+                        } else if (this.minute < date.getMinute()) {
+                            return date;
+                        } else {
+                            return this;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     public int getMonth() {
