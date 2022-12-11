@@ -48,9 +48,23 @@ public class Video {
     }
 
     // TODO
-    public static void sortList(Video videoList[]) {
-
+    public static Video[] sortList(Video videoList[]) {
+        for (int i = 0; i < videoList.length; i++) {
+            for (int j = i; j < videoList.length; j++) {
+                if (videoList[i].getDatePosted().compareDates(videoList[j].getDatePosted()) < 0) { // if second is more recent
+                    Video temp = videoList[i];
+                    videoList[i] = videoList[j];
+                    videoList[j] = temp;
+                }
+            }
+        }
+        return videoList;
     }
 
+    public String toString() {
+        String str = "URI link: " + uri.toString() + "\n";
+        str += "Date: " + datePosted.toString();
+        return str;
+    }
 
 }

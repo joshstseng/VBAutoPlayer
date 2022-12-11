@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="started date class&#10;started video class">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="boom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -49,7 +49,8 @@
       <updated>1670714813172</updated>
       <workItem from="1670714816397" duration="2566000" />
       <workItem from="1670718423637" duration="608000" />
-      <workItem from="1670733851059" duration="957000" />
+      <workItem from="1670733851059" duration="988000" />
+      <workItem from="1670769401759" duration="977000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670719024100</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="boom">
+      <created>1670734831708</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670734831708</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
     <MESSAGE value="created project and merged to github" />
     <MESSAGE value="able to make program open a url" />
     <MESSAGE value="started date class&#10;started video class" />
-    <option name="LAST_COMMIT_MESSAGE" value="started date class&#10;started video class" />
+    <MESSAGE value="boom" />
+    <option name="LAST_COMMIT_MESSAGE" value="boom" />
   </component>
 </project>

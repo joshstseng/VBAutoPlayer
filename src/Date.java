@@ -29,34 +29,35 @@ public class Date {
 
     // compare this to input
     // year->month->day->hour->minute
-    // if exactly same, returns this
-    public Date compareDates(Date date) {
+    // this: 1 -- compared, -1
+    // if exactly same, returns 1
+    public int compareDates(Date date) {
         if (this.year > date.getYear()) {
-            return this;
+            return 1;
         } else if (this.year < date.getYear()) {
-            return date;
+            return -1;
         } else {
             if (this.month > date.getMonth()) {
-                return this;
+                return 1;
             } else if (this.month < date.getMonth()) {
-                return date;
+                return -1;
             } else {
                 if (this.day > date.getDay()) {
-                    return this;
+                    return 1;
                 } else if (this.day < date.getDay()) {
-                    return date;
+                    return -1;
                 } else {
                     if (this.hour > date.getHour()) {
-                        return this;
+                        return 1;
                     } else if (this.hour < date.getHour()) {
-                        return date;
+                        return -1;
                     } else {
                         if (this.minute > date.getMinute()) {
-                            return this;
+                            return 1;
                         } else if (this.minute < date.getMinute()) {
-                            return date;
+                            return -1;
                         } else {
-                            return this;
+                            return 1;
                         }
                     }
                 }
@@ -102,6 +103,11 @@ public class Date {
 
     public void setMinute(int minute) {
         this.minute = minute;
+    }
+
+    public String toString() {
+        String str = String.valueOf(month) + " / " + String.valueOf(day) + " / " + String.valueOf(year) + " @ " + String.valueOf(hour) + ":" + String.valueOf(minute);
+        return str;
     }
 
 }

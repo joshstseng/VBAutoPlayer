@@ -8,7 +8,7 @@ public class Main {
 
             // test stuff
             Date avpDate = new Date(1, 28, 2005, 7, 30);
-            Date oosDate = new Date(11, 29, 2022, 29, 5);
+            Date oosDate = new Date(11, 29, 2022, 23, 5);
             Date ncaaDate = new Date(12, 10, 2022, 19, 30);
 
             URI avpURI = new URI("https://www.youtube.com/watch?v=CtDKAvaeF70");
@@ -20,6 +20,12 @@ public class Main {
             Video ncaaVideo = new Video(ncaaURI, ncaaDate);
 
             Video[] videoList = {avpVideo, oosVideo, ncaaVideo};
+            videoList = Video.sortList(videoList);
+
+            for (int i = 0; i < videoList.length; i++) {
+                System.out.println(videoList[i]);
+                System.out.println();
+            }
 
             URI test = new URI("https://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button");
             Video.openWebpage(test);
