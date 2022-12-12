@@ -4,16 +4,24 @@ import java.net.URI;
 
 public class Video {
 
+    private String title;
     private URI uri;
     private Date datePosted;
+    // TODO length field???
 
     public Video(URI uri, Date datePosted) {
         this.uri = uri;
         this.datePosted = datePosted;
+
+        // TODO figure out way to strip title from the link
     }
 
     public URI getUri() {
         return uri;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public Date getDatePosted() {
@@ -22,6 +30,10 @@ public class Video {
 
     public void setUri(URI uri) {
         this.uri = uri;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setDatePosted(Date datePosted) {
@@ -48,6 +60,11 @@ public class Video {
     }
 
     // TODO
+    public boolean getTitleFromLink() {
+        return true;
+    }
+
+    // using insertion sort
     public static Video[] sortList(Video videoList[]) {
         for (int i = 0; i < videoList.length; i++) {
             for (int j = i; j < videoList.length; j++) {

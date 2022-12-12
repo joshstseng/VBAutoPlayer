@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="boom">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="video stuff before C exam">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,8 @@
       <workItem from="1670714816397" duration="2566000" />
       <workItem from="1670718423637" duration="608000" />
       <workItem from="1670733851059" duration="988000" />
-      <workItem from="1670769401759" duration="977000" />
+      <workItem from="1670769401759" duration="1057000" />
+      <workItem from="1670859738191" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -101,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670734831708</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="wrote toString methods for Video and Date">
+      <created>1670770421113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670770421114</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +130,8 @@
     <MESSAGE value="able to make program open a url" />
     <MESSAGE value="started date class&#10;started video class" />
     <MESSAGE value="boom" />
-    <option name="LAST_COMMIT_MESSAGE" value="boom" />
+    <MESSAGE value="wrote toString methods for Video and Date" />
+    <MESSAGE value="video stuff before C exam" />
+    <option name="LAST_COMMIT_MESSAGE" value="video stuff before C exam" />
   </component>
 </project>
