@@ -1,5 +1,7 @@
 import java.awt.*;
 import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 //import java.util.Date;
 
 public class Video {
@@ -45,6 +47,7 @@ public class Video {
     * uses desktops default browser
     * exceptions are caught and stack trace is printed
     * returns true on success
+    * overloaded with url
     * */
     public static boolean openWebpage(URI uri) {
         Desktop desktop = Desktop.isDesktopSupported() ? Desktop.getDesktop() : null;
@@ -55,6 +58,15 @@ public class Video {
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
+        return false;
+    }
+
+    public static boolean openWebpage(URL url) {
+        try {
+            return openWebpage(url.toURI());
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
         }
         return false;
     }

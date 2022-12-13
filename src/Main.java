@@ -1,5 +1,8 @@
 import java.awt.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.net.URI;
+import java.net.URL;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +17,7 @@ public class Main {
             URI avpURI = new URI("https://www.youtube.com/watch?v=CtDKAvaeF70");
             URI oosURI = new URI("https://www.youtube.com/watch?v=EqenuNuI16o");
             URI ncaaURI = new URI("https://www.youtube.com/watch?v=M4ApIzKjRr0");
+            URL avpURL = new URL("https://www.youtube.com/watch?v=CtDKAvaeF70");
 
             Video avpVideo = new Video(avpURI, avpDate);
             Video oosVideo = new Video(oosURI, oosDate);
@@ -29,6 +33,24 @@ public class Main {
 
             URI test = new URI("https://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button");
             Video.openWebpage(test);
+
+            /*
+                testing printing the HTML contents of a YT link
+                TODO read the proper line from the HTML code of the title
+             */
+
+            URL oracle = new URL("https://www.youtube.com/watch?v=dpTPntPASC4&ab_channel=Rekt");
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(oracle.openStream()));
+            System.out.println("testing:");
+            String inputLine;
+            while ((inputLine = in.readLine()) != null)
+                System.out.println(inputLine);
+            in.close();
+            /*
+                end test
+             */
+
 
         } catch (Exception e) {
             e.printStackTrace();
