@@ -123,7 +123,7 @@ public class Video {
     public String toString() {
         String str = "URI link: " + uri.toString() + "\n";
         str += "Title: " + getTitle() + "\n";
-        str += "Date: " + datePosted.toString();
+        str += "Date: " + datePosted.toString() + "\n";
         return str;
     }
 

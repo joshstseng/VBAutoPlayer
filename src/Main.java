@@ -23,15 +23,13 @@ public class Main {
             Video oosVideo = new Video(oosURI, oosDate);
             Video ncaaVideo = new Video(ncaaURI, ncaaDate);
 
-            Video[] videoList = {avpVideo, oosVideo, ncaaVideo};
-            videoList = Video.sortList(videoList);
+            Playlist playlist = new Playlist();
+            playlist.addVideo(avpVideo);
+            playlist.addVideo(oosVideo);
+            playlist.addVideo(ncaaVideo);
+            playlist.sortList();
 
-            for (int i = 0; i < videoList.length; i++) {
-                System.out.println(videoList[i]);
-                System.out.println();
-            }
-
-            System.out.println("Title of oosVideo: " + oosVideo.getTitle());
+            System.out.println(playlist);
 
             /*
             URI test = new URI("https://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button");

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="wrote stripTitle function">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="edit toString">
+      <change afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.java" afterDir="false" />
@@ -54,7 +55,7 @@
       <workItem from="1670967501186" duration="931000" />
       <workItem from="1670968697994" duration="635000" />
       <workItem from="1671036315719" duration="234000" />
-      <workItem from="1671132235424" duration="2980000" />
+      <workItem from="1671132235424" duration="4785000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671135114771</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="edit toString">
+      <created>1671135261669</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671135261669</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +168,7 @@
     <MESSAGE value="video stuff before C exam" />
     <MESSAGE value="figured out how to read the HTML, need to strip the title from the HTML" />
     <MESSAGE value="wrote stripTitle function" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrote stripTitle function" />
+    <MESSAGE value="edit toString" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit toString" />
   </component>
 </project>
