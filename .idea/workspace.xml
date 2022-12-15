@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="video stuff before C exam">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="figured out how to read the HTML, need to strip the title from the HTML">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.java" afterDir="false" />
@@ -51,7 +51,10 @@
       <workItem from="1670733851059" duration="988000" />
       <workItem from="1670769401759" duration="1057000" />
       <workItem from="1670859738191" duration="734000" />
-      <workItem from="1670967501186" duration="833000" />
+      <workItem from="1670967501186" duration="931000" />
+      <workItem from="1670968697994" duration="635000" />
+      <workItem from="1671036315719" duration="234000" />
+      <workItem from="1671132235424" duration="2811000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670860466856</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="figured out how to read the HTML, need to strip the title from the HTML">
+      <created>1670968387083</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670968387084</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +151,7 @@
     <MESSAGE value="boom" />
     <MESSAGE value="wrote toString methods for Video and Date" />
     <MESSAGE value="video stuff before C exam" />
-    <option name="LAST_COMMIT_MESSAGE" value="video stuff before C exam" />
+    <MESSAGE value="figured out how to read the HTML, need to strip the title from the HTML" />
+    <option name="LAST_COMMIT_MESSAGE" value="figured out how to read the HTML, need to strip the title from the HTML" />
   </component>
 </project>

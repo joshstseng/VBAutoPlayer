@@ -31,22 +31,43 @@ public class Main {
                 System.out.println();
             }
 
+            System.out.println("Title of oosVideo: " + oosVideo.getTitle());
+
+            /*
             URI test = new URI("https://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button");
             Video.openWebpage(test);
+            */
 
             /*
                 testing printing the HTML contents of a YT link
                 TODO read the proper line from the HTML code of the title
              */
 
-            URL oracle = new URL("https://www.youtube.com/watch?v=dpTPntPASC4&ab_channel=Rekt");
+           /* URL oracle = new URL("https://www.youtube.com/watch?v=EqenuNuI16o&ab_channel=OutofSystem");
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(oracle.openStream()));
             System.out.println("testing:");
             String inputLine;
-            while ((inputLine = in.readLine()) != null)
-                System.out.println(inputLine);
-            in.close();
+            int lineNum = 0;
+            while ((inputLine = in.readLine()) != null) {
+                //System.out.println(inputLine);
+                if (inputLine.contains("Dana Rettke on Wisconsin")) {
+                    System.out.println("\nfound: Dana Rettke on Wisconsin \nline: " + lineNum);
+                    //System.out.println("\nline: \n" + inputLine);
+
+                    int titleIndexBegin = inputLine.indexOf("<title>");
+                    int titleIndexEnd = inputLine.indexOf("</title>");
+                    System.out.println("title begin index: " + titleIndexBegin);
+                    System.out.println("title end index: " + titleIndexEnd);
+
+                    String vidTitle = inputLine.substring(titleIndexBegin + 7, titleIndexEnd);
+                    System.out.println("\ntitle: " + vidTitle);
+
+                    break;
+                }
+                lineNum++;
+            }
+            in.close();*/
             /*
                 end test
              */

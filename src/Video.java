@@ -1,4 +1,7 @@
 import java.awt.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -11,11 +14,10 @@ public class Video {
     private Date datePosted;
     // TODO length field???
 
-    public Video(URI uri, Date datePosted) {
+    public Video(URI uri, Date datePosted) throws MalformedURLException {
         this.uri = uri;
         this.datePosted = datePosted;
-
-        // TODO figure out way to strip title from the link
+        this.title = stripTitle(uri.toURL());
     }
 
     public URI getUri() {
@@ -71,11 +73,6 @@ public class Video {
         return false;
     }
 
-    // TODO
-    public boolean getTitleFromLink() {
-        return true;
-    }
-
     // using insertion sort
     public static Video[] sortList(Video videoList[]) {
         for (int i = 0; i < videoList.length; i++) {
@@ -88,6 +85,34 @@ public class Video {
             }
         }
         return videoList;
+    }
+
+    public String stripTitle(URL url) {
+        String vidTitle = null;
+        try {
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(url.openStream()));
+            String inputLine;
+            while ((inputLine = in.readLine()) != null) {
+
+                if (inputLine.contains("<title>")) {
+                    int titleIndexBegin = inputLine.indexOf("<title>");
+                    int titleIndexEnd = inputLine.indexOf("</title>");
+                    vidTitle = inputLine.substring(titleIndexBegin + 7, titleIndexEnd);
+                    break;
+                }
+            }
+            if (vidTitle == null) {
+                in.close();
+                System.out.println("Title not found in the HTML content");
+                throw (new Exception("Title not found in the HTML content"));
+            }
+            in.close();
+            return vidTitle;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return vidTitle; // null
+        }
     }
 
     public String toString() {
