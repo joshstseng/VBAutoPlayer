@@ -12,10 +12,15 @@ public class Video {
     private String title;
     private URI uri;
     private Date datePosted;
-    // TODO length field???
 
     public Video(URI uri, Date datePosted) throws MalformedURLException {
         this.uri = uri;
+        this.datePosted = datePosted;
+        this.title = stripTitle(uri.toURL());
+    }
+
+    public Video(URL url, Date datePosted) throws MalformedURLException, URISyntaxException {
+        this.uri = url.toURI();
         this.datePosted = datePosted;
         this.title = stripTitle(uri.toURL());
     }
@@ -117,6 +122,7 @@ public class Video {
 
     public String toString() {
         String str = "URI link: " + uri.toString() + "\n";
+        str += "Title: " + getTitle() + "\n";
         str += "Date: " + datePosted.toString();
         return str;
     }

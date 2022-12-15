@@ -19,7 +19,7 @@ public class Main {
             URI ncaaURI = new URI("https://www.youtube.com/watch?v=M4ApIzKjRr0");
             URL avpURL = new URL("https://www.youtube.com/watch?v=CtDKAvaeF70");
 
-            Video avpVideo = new Video(avpURI, avpDate);
+            Video avpVideo = new Video(avpURL, avpDate);
             Video oosVideo = new Video(oosURI, oosDate);
             Video ncaaVideo = new Video(ncaaURI, ncaaDate);
 
@@ -38,10 +38,6 @@ public class Main {
             Video.openWebpage(test);
             */
 
-            /*
-                testing printing the HTML contents of a YT link
-                TODO read the proper line from the HTML code of the title
-             */
 
            /* URL oracle = new URL("https://www.youtube.com/watch?v=EqenuNuI16o&ab_channel=OutofSystem");
             BufferedReader in = new BufferedReader(
