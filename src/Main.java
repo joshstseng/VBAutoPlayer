@@ -3,14 +3,28 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URL;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
         try {
 
+            // RUNNER AUTOMATION
+            Scanner scan = new Scanner(System.in);
+            Runner runner = new Runner(scan);
+
+            runner.welcome();
+
+            Playlist playlist = new Playlist();
+            while (true) {
+
+
+
+            }
+
             // test stuff
-            Date avpDate = new Date(1, 28, 2005, 7, 30);
+            /*Date avpDate = new Date(1, 28, 2005, 7, 30);
             Date oosDate = new Date(11, 29, 2022, 23, 5);
             Date ncaaDate = new Date(12, 10, 2022, 19, 30);
 
@@ -29,7 +43,7 @@ public class Main {
             playlist.addVideo(ncaaVideo);
             playlist.sortList();
 
-            System.out.println(playlist);
+            System.out.println(playlist);*/
 
             /*
             URI test = new URI("https://stackoverflow.com/questions/10967451/open-a-link-in-browser-with-java-button");
