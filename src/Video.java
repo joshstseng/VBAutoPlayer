@@ -26,24 +26,12 @@ public class Video {
     }
 
     public Video(String link) throws URISyntaxException, MalformedURLException {
-        try {
-            URI uri = new URI(link);
-            this.uri = uri;
+        URI uri = new URI(link);
+        this.uri = uri;
 
-            Date d = new Date();
-            this.datePosted = d;
-            this.title = stripTitle(uri.toURL());
-
-        } catch (Exception e) {
-            if ((e instanceof URISyntaxException) | (e instanceof MalformedURLException)) {
-                System.out.println("Link is invalid");
-            } else if (e instanceof IllegalArgumentException) {
-                System.out.println("Link is invalid");
-            } else {
-                e.printStackTrace();
-            }
-        }
-
+        Date d = new Date();
+        this.datePosted = d;
+        this.title = stripTitle(uri.toURL());
     }
 
     public URI getUri() {

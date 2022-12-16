@@ -29,6 +29,7 @@ public class Playlist {
     }
 
     public void addVideo(Video vid) {
+
         Video[] newList = new Video[numVids + 1];
         for (int i = 0; i < numVids; i++) {
             newList[i] = videoList[i];
