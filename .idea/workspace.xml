@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="added playlist class">
-      <change afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="created runner class - will use scanner for input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
       <workItem from="1670968697994" duration="635000" />
       <workItem from="1671036315719" duration="234000" />
       <workItem from="1671132235424" duration="5863000" />
-      <workItem from="1671197143901" duration="709000" />
+      <workItem from="1671197143901" duration="3844000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671137084437</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="created runner class - will use scanner for input">
+      <created>1671201126880</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671201126881</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +186,7 @@
     <MESSAGE value="wrote stripTitle function" />
     <MESSAGE value="edit toString" />
     <MESSAGE value="added playlist class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added playlist class" />
+    <MESSAGE value="created runner class - will use scanner for input" />
+    <option name="LAST_COMMIT_MESSAGE" value="created runner class - will use scanner for input" />
   </component>
 </project>

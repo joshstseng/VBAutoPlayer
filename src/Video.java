@@ -25,6 +25,27 @@ public class Video {
         this.title = stripTitle(uri.toURL());
     }
 
+    public Video(String link) throws URISyntaxException, MalformedURLException {
+        try {
+            URI uri = new URI(link);
+            this.uri = uri;
+
+            Date d = new Date();
+            this.datePosted = d;
+            this.title = stripTitle(uri.toURL());
+
+        } catch (Exception e) {
+            if ((e instanceof URISyntaxException) | (e instanceof MalformedURLException)) {
+                System.out.println("Link is invalid");
+            } else if (e instanceof IllegalArgumentException) {
+                System.out.println("Link is invalid");
+            } else {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
     public URI getUri() {
         return uri;
     }

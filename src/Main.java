@@ -1,6 +1,7 @@
 import java.awt.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 import java.util.*;
@@ -12,15 +13,16 @@ public class Main {
 
             // RUNNER AUTOMATION
             Scanner scan = new Scanner(System.in);
-            Runner runner = new Runner(scan);
+            Playlist playlist = new Playlist();
+
+            Runner runner = new Runner(scan, playlist);
 
             runner.welcome();
 
-            Playlist playlist = new Playlist();
-            while (true) {
+            boolean closed = false;
 
-
-
+            while (!closed) {
+                closed = runner.selectOption();
             }
 
             // test stuff

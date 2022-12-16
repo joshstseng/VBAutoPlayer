@@ -45,9 +45,11 @@ public class Playlist {
      */
     public boolean removeVideo(String title) {
         int index = 0;
+        boolean found = false;
         for (int i = 0; i < videoList.length; i++) {
             if (videoList[i].getTitle().equals(title)) {
                 index = i;
+                found = true;
                 break;
             }
         }
@@ -55,12 +57,17 @@ public class Playlist {
         for (int i = index; i < videoList.length-1; i++) {
             videoList[i] = videoList[i+1];
         }
-        if (index != 0) {
+        if (found) {
             numVids--;
             return true;
         } else {
             return false;
         }
+    }
+
+    public void clearList() {
+        videoList = new Video[numVids];
+        numVids = 0;
     }
 
     public int getNumVids() {
@@ -81,6 +88,12 @@ public class Playlist {
 
     public String toString() {
         String str = "Number of videos: " + numVids + "\n";
+
+        if (numVids == 0) {
+            str += "{Empty}";
+            return str;
+        }
+
         for (int i = 0; i < numVids; i++) {
             str += videoList[i].toString() + "\n";
         }
