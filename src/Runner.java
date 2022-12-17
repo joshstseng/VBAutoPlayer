@@ -3,6 +3,10 @@ import java.net.URISyntaxException;
 import java.util.*;
 public class Runner {
 
+    // TODO
+    // current video will always be the one in the front of the playlist
+    // once it finishes video - removes video from the playlist and opens next link
+
     public Scanner scan;
     public Playlist playlist;
     private int option;
