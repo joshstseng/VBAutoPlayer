@@ -15,7 +15,7 @@ public class Runner {
     public Runner(Scanner scan, Playlist playlist) {
         this.scan = scan;
         this.playlist = playlist;
-    };
+    }
 
 
     public void welcome() {
@@ -31,7 +31,8 @@ public class Runner {
                     "\n\t3. Print the playlist" +
                     "\n\t4. Sort the playlist" +
                     "\n\t5. Clear the playlist" +
-                    "\n\t6. Close the player");
+                    "\n\t6. Play next video in playlist" +
+                    "\n\t7. Close the player");
             option = scan.nextInt();
             scan.nextLine(); // next line? skip the \n
 
@@ -59,6 +60,10 @@ public class Runner {
                 return false;
 
             } else if (option == 6) {
+                playPlaylist();
+                return false;
+
+            } else if (option == 7) {
                 return closeRunner();
 
             } else {
@@ -122,6 +127,23 @@ public class Runner {
     public void clearPlaylist() {
         playlist.clearList();
         System.out.println("Cleared playlist");
+    }
+
+    public void playPlaylist() {
+
+        if (playlist.getNumVids() > 0) {
+            Video vid = playlist.getVideoList()[0];
+            vid.openWebpage(vid.getUri());
+            playlist.removeVideo(vid.getTitle());
+            System.out.println("Playing: " + vid.getTitle());
+
+        } else {
+            System.out.println("Playlist is empty");
+            return;
+        }
+
+
+
     }
 
     public boolean closeRunner() {
