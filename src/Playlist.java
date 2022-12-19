@@ -66,6 +66,14 @@ public class Playlist {
         }
     }
 
+    // goes through the NCAA, OOS, and AVP and gets most recent vids from each and adds to playlist
+    public void fillPlaylist() {
+        Video ncaaVid;
+        Video oosVid;
+        Video avpVid;
+
+    }
+
     public void clearList() {
         videoList = new Video[numVids];
         numVids = 0;
