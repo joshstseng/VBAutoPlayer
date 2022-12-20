@@ -14,6 +14,7 @@ public class GUI implements ActionListener {
     JLabel playlistLabel = new JLabel("{Empty}");
     JButton addButton = new JButton("add Video");
 
+
     public GUI(Runner runner) {
 
         this.runner = runner;
@@ -23,22 +24,6 @@ public class GUI implements ActionListener {
             panel = new JPanel();
             panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
             panel.setLayout(new GridLayout(4, 4));
-            panel.add(addButton);
-            panel.add(playlistLabel);
-            addButton.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                    try {
-                        String videoLink = JOptionPane.showInputDialog("Paste video link: ");
-                        if (videoLink == null) {
-                            return;
-                        } else {
-                            runner.addVideoLink(videoLink);
-                        }
-                    } catch (MalformedURLException | URISyntaxException r) {
-                        r.printStackTrace();
-                    }
-                }
-            });
 
             panel.setSize(1000, 750);
             frame.setPreferredSize(new Dimension(1000, 750));
@@ -47,12 +32,43 @@ public class GUI implements ActionListener {
 
             frame.add(panel, BorderLayout.CENTER);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.pack();
-            frame.setVisible(true);
+
+            panel.add(addButton);
+            panel.add(playlistLabel);
+            addButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    try {
+                        String videoLink = JOptionPane.showInputDialog("Paste video link: ");
+                        if (videoLink == null) {
+                            return;
+                        } else {
+
+                            if (runner.getPlaylist().getNumVids() == 0) {
+                                runner.addVideoLink(videoLink);
+                                playlistLabel.setText(runner.guiLabelTitles(0));
+                            } else {
+                                runner.addVideoLink(videoLink);
+                                panel.add(new JLabel(runner.guiLabelTitles(numVids)));
+                                showFrame();
+                            }
+
+                        }
+                    } catch (MalformedURLException | URISyntaxException r) {
+                        r.printStackTrace();
+                    }
+                }
+            });
+
+            showFrame();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void showFrame() {
+        this.frame.pack();
+        this.frame.setVisible(true);
     }
 
 

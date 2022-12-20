@@ -163,9 +163,23 @@ public class Runner {
             System.out.println("Playlist is empty");
             return;
         }
+    }
 
+    // returns all labels
+    public String guiLabelTitles() {
+        String label = "";
+        for (int i = 0; i < playlist.getNumVids(); i++) {
+            label += playlist.getVideoList()[i].getTitle();
+            label += "\n";
+        }
+        return label;
+    }
 
-
+    public String guiLabelTitles(int i) {
+        String label = "";
+        label += playlist.getVideoList()[i].getTitle();
+        label += "\n";
+        return label;
     }
 
     public boolean closeRunner() {
@@ -174,5 +188,7 @@ public class Runner {
         return true;
     }
 
-
+    public Playlist getPlaylist() {
+        return playlist;
+    }
 }
