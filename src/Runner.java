@@ -32,7 +32,8 @@ public class Runner {
                     "\n\t4. Sort the playlist" +
                     "\n\t5. Clear the playlist" +
                     "\n\t6. Play next video in playlist" +
-                    "\n\t7. Close the player");
+                    "\n\t7. Fill the playlist (w/ NCAA, OOS, AVP)" +
+                    "\n\t8. Close the player");
             option = scan.nextInt();
             scan.nextLine(); // next line? skip the \n
 
@@ -64,6 +65,10 @@ public class Runner {
                 return false;
 
             } else if (option == 7) {
+              playlist.fillPlaylist();
+              return false;
+
+            } else if (option == 8) {
                 return closeRunner();
 
             } else {

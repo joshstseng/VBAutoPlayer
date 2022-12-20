@@ -1,3 +1,11 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+
 public class Playlist {
 
     private Video[] videoList; // max vids 10
@@ -68,9 +76,79 @@ public class Playlist {
 
     // goes through the NCAA, OOS, and AVP and gets most recent vids from each and adds to playlist
     public void fillPlaylist() {
-        Video ncaaVid;
-        Video oosVid;
-        Video avpVid;
+
+        try {
+            Video ncaaVid;
+            Video oosVid;
+            Video avpVid;
+            String nextNcaaLink;
+            String nextOosLink;
+            String nextAvpLink;
+
+            URL ncaaHome = new URL("https://www.youtube.com/@NCAAChampionships/videos");
+            URL oosHome = new URL("https://www.youtube.com/@OutofSystemOfficial");
+            URL avpHome = new URL("https://www.youtube.com/@avpbeach");
+
+            BufferedReader ncaaIn = new BufferedReader(
+                    new InputStreamReader(ncaaHome.openStream()));
+            BufferedReader oosIn = new BufferedReader(
+                    new InputStreamReader(oosHome.openStream()));
+            BufferedReader avpIn = new BufferedReader(
+                    new InputStreamReader(avpHome.openStream()));
+
+            String inputLine;
+            while ((inputLine = ncaaIn.readLine()) != null) {
+                if (inputLine.contains("/watch?")) {
+                    int ncaaBegin = inputLine.indexOf("/watch?"); //index of the video link
+                    int ncaaEnd = ncaaBegin + 20;
+                    nextNcaaLink = "https://www.youtube.com" + inputLine.substring(ncaaBegin, ncaaEnd);
+                    ncaaVid = new Video(nextNcaaLink);
+                    videoList[numVids] = ncaaVid;
+                    numVids++;
+                    break;
+                }
+            }
+
+            while ((inputLine = oosIn.readLine()) != null) {
+                if (inputLine.contains("/watch?")) {
+                    int oosBegin = inputLine.indexOf("/watch?"); //index of the video link
+                    int oosEnd = oosBegin + 20;
+                    nextOosLink = "https://www.youtube.com" + inputLine.substring(oosBegin, oosEnd);
+                    oosVid = new Video(nextOosLink);
+                    videoList[numVids] = oosVid;
+                    numVids++;
+                    break;
+                }
+            }
+
+            while ((inputLine = avpIn.readLine()) != null) {
+                if (inputLine.contains("/watch?")) {
+                    int avpBegin = inputLine.indexOf("/watch?"); //index of the video link
+                    int avpEnd = avpBegin + 20;
+                    nextAvpLink = "https://www.youtube.com" + inputLine.substring(avpBegin, avpEnd);
+                    avpVid = new Video(nextAvpLink);
+                    videoList[numVids] = avpVid;
+                    numVids++;
+                    break;
+                }
+            }
+
+            /*
+            while ((inputLine = oosIn.readLine()) != null) {
+                if (inputLine.contains(""))
+            }*/
+
+        } catch (MalformedURLException e) {
+            System.out.println("Invalid homepage link");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println("IO Exception");
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            System.out.println("Invalid watch link from home page");
+            e.printStackTrace();
+        }
+
 
     }
 
