@@ -12,20 +12,7 @@ public class GUI implements ActionListener {
     JFrame frame;
     JPanel panel;
     JLabel playlistLabel = new JLabel("{Empty}");
-    JButton addButton = new JButton("add Video") {
-        public void actionPerformed(ActionEvent e) {
-            try {
-                String videoLink = JOptionPane.showInputDialog("Paste video link: ");
-                if (videoLink == null) {
-                    return;
-                } else {
-                    runner.addVideoLink(videoLink);
-                }
-            } catch (MalformedURLException | URISyntaxException r) {
-                r.printStackTrace();
-            }
-        }
-    };
+    JButton addButton = new JButton("add Video");
 
     public GUI(Runner runner) {
 
@@ -38,7 +25,20 @@ public class GUI implements ActionListener {
             panel.setLayout(new GridLayout(4, 4));
             panel.add(addButton);
             panel.add(playlistLabel);
-            addButton.addActionListener(this);
+            addButton.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                    try {
+                        String videoLink = JOptionPane.showInputDialog("Paste video link: ");
+                        if (videoLink == null) {
+                            return;
+                        } else {
+                            runner.addVideoLink(videoLink);
+                        }
+                    } catch (MalformedURLException | URISyntaxException r) {
+                        r.printStackTrace();
+                    }
+                }
+            });
 
             panel.setSize(1000, 750);
             frame.setPreferredSize(new Dimension(1000, 750));
