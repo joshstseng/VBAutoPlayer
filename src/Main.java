@@ -17,6 +17,8 @@ public class Main {
 
             Runner runner = new Runner(scan, playlist);
 
+            GUI gui = new GUI(runner);
+
             runner.welcome();
 
             boolean closed = false;

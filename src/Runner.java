@@ -106,6 +106,23 @@ public class Runner {
             return false;
         }
     }
+    public boolean addVideoLink(String videoLink) throws URISyntaxException, MalformedURLException {
+        try {
+
+            Video newVid = new Video(videoLink);
+            playlist.addVideo(newVid);
+            System.out.println("Added: " + newVid.getTitle());
+            return false;
+        } catch (Exception e) {
+            if ((e instanceof URISyntaxException) | (e instanceof MalformedURLException) | (e instanceof IllegalArgumentException)) {
+                System.out.println("Link is invalid");
+            } else {
+                e.printStackTrace();
+                return true;
+            }
+            return false;
+        }
+    }
 
     public boolean removeVideo() {
 
