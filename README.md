@@ -8,3 +8,5 @@ current TODO:
 - make a GUI
 - make it more user friendly
   - make remove more user friendly
+- memory leaks
+- random stuff that IntelliJ is telling me
