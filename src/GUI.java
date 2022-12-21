@@ -38,7 +38,7 @@ public class GUI implements ActionListener {
             frame.add(panel, BorderLayout.CENTER);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            panel.add(playNextButton); // TODO
+            panel.add(playNextButton);
             playNextButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     String title = runner.getPlaylist().getVideoList().get(0).getTitle();
@@ -100,27 +100,32 @@ public class GUI implements ActionListener {
             clearButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
 
-                    Component[] componentList = panel.getComponents();
+                    /*Component[] componentList = panel.getComponents();
                     for (Component c : componentList) {
                         if (c instanceof JLabel) {
                             panel.remove(c);
                         }
+                    }*/
+
+                    for (int i = 0; i < labels.size(); i++) {
+                        panel.remove(labels.get(i));
                     }
+
                     runner.clearPlaylist();
                     labels.clear();
                     showFrame();
                 }
             });
 
-            // TODO temporary
+            // TODO temporary - not removing from the GUI
             panel.add(removeButton);
             removeButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
 
                     String title = JOptionPane.showInputDialog("What's the title of the video?");
                     boolean found = false;
-                    for (Video vid : runner.getPlaylist().getVideoList()) {
-                        if (vid.getTitle().equalsIgnoreCase(title)) {
+                    for (JLabel l : labels) {
+                        if (l.getText().equals(title)) {
                             found = true;
                             break;
                         }
@@ -128,13 +133,16 @@ public class GUI implements ActionListener {
 
                     if (found) {
                         Component componentList[] = panel.getComponents();
+
                         for (Component c : componentList) {
                             if (c instanceof JLabel) {
                                 if (((JLabel) c).getText().equals(title)) {
                                     panel.remove(c);
+                                    showFrame();
                                 }
                             }
                         }
+
                         runner.removeVideo(title);
                         labels.remove(title);
                         showFrame();

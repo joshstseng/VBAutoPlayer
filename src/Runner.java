@@ -146,6 +146,7 @@ public class Runner {
 
         input = title;
         boolean removed = playlist.removeVideo(input);
+        System.out.println("Removed: " + title);
         return removed;
     }
 
