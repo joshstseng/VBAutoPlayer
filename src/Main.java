@@ -31,7 +31,7 @@ public class Main {
             /*Date avpDate = new Date(1, 28, 2005, 7, 30);
             Date oosDate = new Date(11, 29, 2022, 23, 5);
             Date ncaaDate = new Date(12, 10, 2022, 19, 30);
-®
+
             URI avpURI = new URI("https://www.youtube.com/watch?v=CtDKAvaeF70");
             URI oosURI = new URI("https://www.youtube.com/watch?v=EqenuNuI16o");
             URI ncaaURI = new URI("https://www.youtube.com/watch?v=M4ApIzKjRr0");

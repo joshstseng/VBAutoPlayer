@@ -5,31 +5,32 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.*;
 
 public class Playlist {
 
-    private Video[] videoList; // max vids 10
+    //private Video[] videoList; // max vids 10
+    private ArrayList<Video> videoList = new ArrayList<Video>();
     private int numVids = 0;
 
     public Playlist() {
-        this.videoList = new Video[10];
         this.numVids = 0;
 
     }
 
-    public Playlist(Video[] videoList) {
+    public Playlist(ArrayList<Video> videoList) {
         this.videoList = videoList;
-        this.numVids = videoList.length;
+        this.numVids = videoList.size();
     }
 
     // sorts the videoList and return sorted videoList
-    public Video[] sortList() {
+    public ArrayList<Video> sortList() {
         for (int i = 0; i < numVids; i++) {
             for (int j = i; j < numVids; j++) {
-                if (videoList[i].getDatePosted().compareDates(videoList[j].getDatePosted()) < 0) { // if second is more recent
-                    Video temp = videoList[i];
-                    videoList[i] = videoList[j];
-                    videoList[j] = temp;
+                if (videoList.get(i).getDatePosted().compareDates(videoList.get(j).getDatePosted()) < 0) { // if second is more recent
+                    Video temp = videoList.get(i);
+                    videoList.set(i, videoList.get(j));
+                    videoList.set(j, temp);
                 }
             }
         }
@@ -37,13 +38,7 @@ public class Playlist {
     }
 
     public void addVideo(Video vid) {
-
-        Video[] newList = new Video[numVids + 1];
-        for (int i = 0; i < numVids; i++) {
-            newList[i] = videoList[i];
-        }
-        newList[numVids] = vid;
-        videoList = newList;
+        videoList.add(vid);
         numVids++;
     }
 
@@ -55,16 +50,16 @@ public class Playlist {
     public boolean removeVideo(String title) {
         int index = 0;
         boolean found = false;
-        for (int i = 0; i < videoList.length; i++) {
-            if (videoList[i].getTitle().equals(title)) {
+        for (int i = 0; i < videoList.size(); i++) {
+            if (videoList.get(i).getTitle().equals(title)) {
                 index = i;
                 found = true;
                 break;
             }
         }
 
-        for (int i = index; i < videoList.length-1; i++) {
-            videoList[i] = videoList[i+1];
+        for (int i = index; i < videoList.size()-1; i++) {
+            videoList.set(i, videoList.get(i + 1));
         }
         if (found) {
             numVids--;
@@ -103,7 +98,7 @@ public class Playlist {
                     int ncaaEnd = ncaaBegin + 20;
                     nextNcaaLink = "https://www.youtube.com" + inputLine.substring(ncaaBegin, ncaaEnd);
                     ncaaVid = new Video(nextNcaaLink);
-                    videoList[numVids] = ncaaVid;
+                    videoList.add(ncaaVid);
                     numVids++;
                     break;
                 }
@@ -115,7 +110,7 @@ public class Playlist {
                     int oosEnd = oosBegin + 20;
                     nextOosLink = "https://www.youtube.com" + inputLine.substring(oosBegin, oosEnd);
                     oosVid = new Video(nextOosLink);
-                    videoList[numVids] = oosVid;
+                    videoList.add(oosVid);
                     numVids++;
                     break;
                 }
@@ -127,7 +122,7 @@ public class Playlist {
                     int avpEnd = avpBegin + 20;
                     nextAvpLink = "https://www.youtube.com" + inputLine.substring(avpBegin, avpEnd);
                     avpVid = new Video(nextAvpLink);
-                    videoList[numVids] = avpVid;
+                    videoList.add(avpVid);
                     numVids++;
                     break;
                 }
@@ -153,7 +148,7 @@ public class Playlist {
     }
 
     public void clearList() {
-        videoList = new Video[numVids];
+        videoList.clear();
         numVids = 0;
     }
 
@@ -161,7 +156,7 @@ public class Playlist {
         return numVids;
     }
 
-    public Video[] getVideoList() {
+    public ArrayList<Video> getVideoList() {
         return videoList;
     }
 
@@ -169,7 +164,7 @@ public class Playlist {
         this.numVids = numVids;
     }
 
-    public void setVideoList(Video[] videoList) {
+    public void setVideoList(ArrayList<Video> videoList) {
         this.videoList = videoList;
     }
 
@@ -182,7 +177,7 @@ public class Playlist {
         }
 
         for (int i = 0; i < numVids; i++) {
-            str += videoList[i].toString() + "\n";
+            str += videoList.get(i).toString() + "\n";
         }
         return str;
     }

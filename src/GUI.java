@@ -7,13 +7,12 @@ import java.net.URISyntaxException;
 
 public class GUI implements ActionListener {
 
-    int numVids;
     Runner runner;
     JFrame frame;
     JPanel panel;
-    JLabel playlistLabel = new JLabel("{Empty}");
+    //JLabel playlistLabel = new JLabel("{Empty}");
     JButton addButton = new JButton("add Video");
-
+    JButton fillButton = new JButton("fill Playlist");
 
     public GUI(Runner runner) {
 
@@ -27,14 +26,14 @@ public class GUI implements ActionListener {
 
             panel.setSize(1000, 750);
             frame.setPreferredSize(new Dimension(1000, 750));
-            playlistLabel.setPreferredSize(new Dimension(1000, 5));
+            //playlistLabel.setPreferredSize(new Dimension(5, 5));
             addButton.setPreferredSize(new Dimension(40, 40));
+            fillButton.setPreferredSize(new Dimension(40, 40));
 
             frame.add(panel, BorderLayout.CENTER);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             panel.add(addButton);
-            panel.add(playlistLabel);
             addButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
                     try {
@@ -43,14 +42,14 @@ public class GUI implements ActionListener {
                             return;
                         } else {
 
-                            if (runner.getPlaylist().getNumVids() == 0) {
+                            /*if (runner.getPlaylist().getNumVids() == 0) {
                                 runner.addVideoLink(videoLink);
                                 playlistLabel.setText(runner.guiLabelTitles(0));
-                            } else {
+                            } else {*/
                                 runner.addVideoLink(videoLink);
-                                panel.add(new JLabel(runner.guiLabelTitles(numVids)));
+                                panel.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - 1)));
                                 showFrame();
-                            }
+                            //}
 
                         }
                     } catch (MalformedURLException | URISyntaxException r) {
@@ -58,6 +57,24 @@ public class GUI implements ActionListener {
                     }
                 }
             });
+
+            panel.add(fillButton);
+            fillButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    runner.getPlaylist().fillPlaylist();
+                    for (int i = 3; i > 0; i--) {
+                        panel.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - i)));
+                    }
+                    showFrame();
+                }
+            });
+            //panel.add(playlistLabel);
+
+
+
+
+
+
 
             showFrame();
 

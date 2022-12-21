@@ -154,7 +154,7 @@ public class Runner {
     public void playPlaylist() {
 
         if (playlist.getNumVids() > 0) {
-            Video vid = playlist.getVideoList()[0];
+            Video vid = playlist.getVideoList().get(0);
             vid.openWebpage(vid.getUri());
             playlist.removeVideo(vid.getTitle());
             System.out.println("Playing: " + vid.getTitle());
@@ -169,7 +169,7 @@ public class Runner {
     public String guiLabelTitles() {
         String label = "";
         for (int i = 0; i < playlist.getNumVids(); i++) {
-            label += playlist.getVideoList()[i].getTitle();
+            label += playlist.getVideoList().get(i).getTitle();
             label += "\n";
         }
         return label;
@@ -177,8 +177,8 @@ public class Runner {
 
     public String guiLabelTitles(int i) {
         String label = "";
-        label += playlist.getVideoList()[i].getTitle();
-        label += "\n";
+        label += playlist.getVideoList().get(i).getTitle();
+        //label += "\n";
         return label;
     }
 
