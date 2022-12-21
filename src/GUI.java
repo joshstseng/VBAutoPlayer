@@ -88,6 +88,7 @@ public class GUI implements ActionListener {
                     }
                     runner.clearPlaylist();
                     labels.clear();
+                    showFrame();
                 }
             });
 

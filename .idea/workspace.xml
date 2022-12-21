@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="fillPlaylist Button and added arrayList instead of arrays">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="start clearButton">
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
       <workItem from="1671568286135" duration="233000" />
       <workItem from="1671571563070" duration="2299000" />
       <workItem from="1671574086325" duration="184000" />
-      <workItem from="1671643953099" duration="3709000" />
+      <workItem from="1671643953099" duration="4117000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -242,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671646817628</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="start clearButton">
+      <created>1671648063325</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1671648063325</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +289,8 @@
     <MESSAGE value="finished addBUtton" />
     <MESSAGE value="add labels dynamically when addVideo" />
     <MESSAGE value="fillPlaylist Button and added arrayList instead of arrays" />
-    <option name="LAST_COMMIT_MESSAGE" value="fillPlaylist Button and added arrayList instead of arrays" />
+    <MESSAGE value="start clearButton" />
+    <option name="LAST_COMMIT_MESSAGE" value="start clearButton" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
