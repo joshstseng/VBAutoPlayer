@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="add labels dynamically when addVideo">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="fillPlaylist Button and added arrayList instead of arrays">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
       <workItem from="1671568286135" duration="233000" />
       <workItem from="1671571563070" duration="2299000" />
       <workItem from="1671574086325" duration="184000" />
-      <workItem from="1671643953099" duration="2691000" />
+      <workItem from="1671643953099" duration="3709000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -238,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671573822051</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fillPlaylist Button and added arrayList instead of arrays">
+      <created>1671646817628</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1671646817628</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +282,8 @@
     <MESSAGE value="gui update addVideo" />
     <MESSAGE value="finished addBUtton" />
     <MESSAGE value="add labels dynamically when addVideo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add labels dynamically when addVideo" />
+    <MESSAGE value="fillPlaylist Button and added arrayList instead of arrays" />
+    <option name="LAST_COMMIT_MESSAGE" value="fillPlaylist Button and added arrayList instead of arrays" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,15 +4,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.*;
 
 public class GUI implements ActionListener {
 
     Runner runner;
     JFrame frame;
     JPanel panel;
+    ArrayList<JLabel> labels = new ArrayList<JLabel>();
     //JLabel playlistLabel = new JLabel("{Empty}");
-    JButton addButton = new JButton("add Video");
-    JButton fillButton = new JButton("fill Playlist");
+    JButton addButton = new JButton("Add Video");
+    JButton fillButton = new JButton("Fill Playlist");
+    JButton clearButton = new JButton("Clear Playlist");
 
     public GUI(Runner runner) {
 
@@ -47,7 +50,9 @@ public class GUI implements ActionListener {
                                 playlistLabel.setText(runner.guiLabelTitles(0));
                             } else {*/
                                 runner.addVideoLink(videoLink);
-                                panel.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - 1)));
+                                labels.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - 1)));
+                                panel.add(labels.get(runner.getPlaylist().getNumVids() - 1));
+                                //panel.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - 1)));
                                 showFrame();
                             //}
 
@@ -63,11 +68,29 @@ public class GUI implements ActionListener {
                 public void actionPerformed(ActionEvent e) {
                     runner.getPlaylist().fillPlaylist();
                     for (int i = 3; i > 0; i--) {
-                        panel.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - i)));
+                        labels.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - i)));
+                        panel.add(labels.get(runner.getPlaylist().getNumVids() - i));
+                        //panel.add(new JLabel(runner.guiLabelTitles(runner.getPlaylist().getNumVids() - i)));
                     }
                     showFrame();
                 }
             });
+
+            panel.add(clearButton);
+            clearButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+
+                    Component[] componentList = panel.getComponents();
+                    for (Component c : componentList) {
+                        if (c instanceof JLabel) {
+                            panel.remove(c);
+                        }
+                    }
+                    runner.clearPlaylist();
+                    labels.clear();
+                }
+            });
+
             //panel.add(playlistLabel);
 
 
