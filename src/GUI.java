@@ -13,9 +13,11 @@ public class GUI implements ActionListener {
     JPanel panel;
     ArrayList<JLabel> labels = new ArrayList<JLabel>();
     //JLabel playlistLabel = new JLabel("{Empty}");
+    JButton playNextButton = new JButton(">>");
     JButton addButton = new JButton("Add Video");
     JButton fillButton = new JButton("Fill Playlist");
     JButton clearButton = new JButton("Clear Playlist");
+    JButton removeButton = new JButton("Remove Video"); // temporary TODO
 
     public GUI(Runner runner) {
 
@@ -35,6 +37,23 @@ public class GUI implements ActionListener {
 
             frame.add(panel, BorderLayout.CENTER);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+            panel.add(playNextButton); // TODO
+            playNextButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    String title = runner.getPlaylist().getVideoList().get(0).getTitle();
+                    Component[] componentList = panel.getComponents();
+                    for (Component c : componentList) {
+                        if (c instanceof JLabel) {
+                            if (((JLabel) c).getText().equals(title)) {
+                                panel.remove(c);
+                            }
+                        }
+                    }
+                    runner.playPlaylist();
+                    showFrame();
+                }
+            });
 
             panel.add(addButton);
             addButton.addActionListener(new ActionListener() {
@@ -57,8 +76,9 @@ public class GUI implements ActionListener {
                             //}
 
                         }
-                    } catch (MalformedURLException | URISyntaxException r) {
-                        r.printStackTrace();
+                    } catch (Exception r) {
+                        JOptionPane.showMessageDialog(panel, "Link does not exist", "Warning", JOptionPane.WARNING_MESSAGE);
+                        //r.printStackTrace();
                     }
                 }
             });
@@ -91,6 +111,38 @@ public class GUI implements ActionListener {
                     showFrame();
                 }
             });
+
+            // TODO temporary
+            panel.add(removeButton);
+            removeButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+
+                    String title = JOptionPane.showInputDialog("What's the title of the video?");
+                    boolean found = false;
+                    for (Video vid : runner.getPlaylist().getVideoList()) {
+                        if (vid.getTitle().equalsIgnoreCase(title)) {
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (found) {
+                        Component componentList[] = panel.getComponents();
+                        for (Component c : componentList) {
+                            if (c instanceof JLabel) {
+                                if (((JLabel) c).getText().equals(title)) {
+                                    panel.remove(c);
+                                }
+                            }
+                        }
+                        runner.removeVideo(title);
+                        labels.remove(title);
+                        showFrame();
+                    }
+
+                }
+            });
+
 
             //panel.add(playlistLabel);
 

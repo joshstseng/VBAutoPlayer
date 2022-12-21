@@ -137,6 +137,18 @@ public class Runner {
         return removed;
     }
 
+    public boolean removeVideo(String title) {
+
+        if (playlist.getNumVids() == 0) {
+            System.out.println("The playlist is empty. No videos removed");
+            return false;
+        }
+
+        input = title;
+        boolean removed = playlist.removeVideo(input);
+        return removed;
+    }
+
     public void printPlaylist() {
         System.out.println(playlist);
     }

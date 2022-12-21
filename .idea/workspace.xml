@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="start clearButton">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="clearButton works">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
       <workItem from="1671568286135" duration="233000" />
       <workItem from="1671571563070" duration="2299000" />
       <workItem from="1671574086325" duration="184000" />
-      <workItem from="1671643953099" duration="4117000" />
+      <workItem from="1671643953099" duration="5608000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -248,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671648063325</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="clearButton works">
+      <created>1671648120982</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1671648120982</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +300,8 @@
     <MESSAGE value="add labels dynamically when addVideo" />
     <MESSAGE value="fillPlaylist Button and added arrayList instead of arrays" />
     <MESSAGE value="start clearButton" />
-    <option name="LAST_COMMIT_MESSAGE" value="start clearButton" />
+    <MESSAGE value="clearButton works" />
+    <option name="LAST_COMMIT_MESSAGE" value="clearButton works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

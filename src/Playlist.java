@@ -58,10 +58,8 @@ public class Playlist {
             }
         }
 
-        for (int i = index; i < videoList.size()-1; i++) {
-            videoList.set(i, videoList.get(i + 1));
-        }
         if (found) {
+            videoList.remove(index);
             numVids--;
             return true;
         } else {
