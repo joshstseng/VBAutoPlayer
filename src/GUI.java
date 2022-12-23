@@ -50,6 +50,8 @@ public class GUI implements ActionListener {
                             }
                         }
                     }
+                    panel.revalidate();
+                    panel.repaint();
                     runner.playPlaylist();
                     showFrame();
                 }
@@ -100,24 +102,22 @@ public class GUI implements ActionListener {
             clearButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
 
-                    /*Component[] componentList = panel.getComponents();
+                    Component[] componentList = panel.getComponents();
                     for (Component c : componentList) {
                         if (c instanceof JLabel) {
                             panel.remove(c);
                         }
-                    }*/
-
-                    for (int i = 0; i < labels.size(); i++) {
-                        panel.remove(labels.get(i));
                     }
+
 
                     runner.clearPlaylist();
                     labels.clear();
+                    panel.revalidate();
+                    panel.repaint();
                     showFrame();
                 }
             });
 
-            // TODO temporary - not removing from the GUI
             panel.add(removeButton);
             removeButton.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
@@ -139,21 +139,18 @@ public class GUI implements ActionListener {
                                 if (((JLabel) c).getText().equals(title)) {
                                     panel.remove(c);
                                     showFrame();
+                                    break;
                                 }
                             }
                         }
-
+                        panel.revalidate();
+                        panel.repaint();
                         runner.removeVideo(title);
                         labels.remove(title);
                         showFrame();
                     }
-
                 }
             });
-
-
-            //panel.add(playlistLabel);
-
 
 
 
