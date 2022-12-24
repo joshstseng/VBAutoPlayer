@@ -15,7 +15,6 @@ public class guiUpdate extends Frame {
     Button clearButton;
     Label msgLabel;
     TextField videoNameTF;
-    Label test;
 
     public guiUpdate(Runner runner) {
 
@@ -34,6 +33,8 @@ public class guiUpdate extends Frame {
         fillButton.addActionListener(new fillButtonListener());
 
         clearButton = new Button("Clear");
+        clearButton.addActionListener(new clearButtonListener());
+
         top.add(fillButton);
         top.add(clearButton);
 
@@ -48,8 +49,7 @@ public class guiUpdate extends Frame {
         middle.add(videoNameTF); // add text field
 
         // bottom components
-        test = new Label("bottom panel");
-        bot.add(test);
+        // labels
 
         // Frame
         add(top);
@@ -71,6 +71,25 @@ public class guiUpdate extends Frame {
                 labelTitles.add(vidTitle);
                 bot.add(new Label(vidTitle));
             }
+            bot.revalidate();
+            bot.repaint();
+            bot.setVisible(true);
+        }
+    }
+
+    private class clearButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            Component[] componentList = bot.getComponents();
+
+            for (Component c : componentList) {
+                if (c instanceof Label) {
+                    bot.remove(c);
+                }
+            }
+            labelTitles.clear();
+            runner.clearPlaylist();
             bot.revalidate();
             bot.repaint();
             bot.setVisible(true);
