@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="clearButton done">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="textField Listener done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guiUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
     </list>
@@ -82,7 +82,7 @@
       <workItem from="1671908703524" duration="758000" />
       <workItem from="1671910243607" duration="3261000" />
       <workItem from="1671921613869" duration="1021000" />
-      <workItem from="1671922642992" duration="2042000" />
+      <workItem from="1671922642992" duration="2618000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -322,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671924014300</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="textField Listener done">
+      <created>1671924869613</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1671924869613</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,7 +347,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="figured out how to read the HTML, need to strip the title from the HTML" />
     <MESSAGE value="wrote stripTitle function" />
     <MESSAGE value="edit toString" />
     <MESSAGE value="added playlist class" />
@@ -365,7 +371,8 @@
     <MESSAGE value="center the top and change rows/cols" />
     <MESSAGE value="fillButton done" />
     <MESSAGE value="clearButton done" />
-    <option name="LAST_COMMIT_MESSAGE" value="clearButton done" />
+    <MESSAGE value="textField Listener done" />
+    <option name="LAST_COMMIT_MESSAGE" value="textField Listener done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

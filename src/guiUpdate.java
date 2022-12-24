@@ -13,6 +13,7 @@ public class guiUpdate extends Frame {
     Panel top;
     Panel middle;
     Panel bot;
+    Button playButton;
     Button fillButton;
     Button clearButton;
     Label msgLabel;
@@ -35,6 +36,10 @@ public class guiUpdate extends Frame {
         // TODO action listeners for all buttons and text field
 
         // top components
+
+        playButton = new Button("Play Next");
+        playButton.addActionListener(new playButtonListener());
+
         fillButton = new Button("Fill");
         fillButton.addActionListener(new fillButtonListener());
 
@@ -42,6 +47,7 @@ public class guiUpdate extends Frame {
         clearButton.addActionListener(new clearButtonListener());
 
         top.add(fillButton);
+        top.add(playButton);
         top.add(clearButton);
 
         // middle components
@@ -66,6 +72,31 @@ public class guiUpdate extends Frame {
         setVisible(true);
 
         addWindowListener(new MyWindowListener());
+    }
+
+    private class playButtonListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+
+            if (labelTitles.size() == 0) {
+                return;
+            }
+
+            String title = labelTitles.get(0);
+
+            Component[] componentList = bot.getComponents();
+            for (Component c : componentList) {
+                if (c instanceof Label) {
+                    if (((Label) c).getText().equals(title)) {
+                        bot.remove(c);
+                    }
+                }
+            }
+            labelTitles.remove(0);
+            runner.playPlaylist();
+            bot.revalidate();
+            bot.repaint();
+            bot.setVisible(true);
+        }
     }
 
     private class fillButtonListener implements ActionListener {
@@ -120,7 +151,6 @@ public class guiUpdate extends Frame {
             } catch (Exception l) {
                 System.out.println("Link is invalid");
                 msgLabel.setText(error);
-                l.printStackTrace();
             }
         }
     }
