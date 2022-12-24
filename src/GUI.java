@@ -27,7 +27,7 @@ public class GUI implements ActionListener {
             frame = new JFrame("Auto Player");
             panel = new JPanel();
             panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
-            panel.setLayout(new GridLayout(4, 4));
+            panel.setLayout(new GridLayout(4, 10));
 
             panel.setSize(1000, 750);
             frame.setPreferredSize(new Dimension(1000, 750));

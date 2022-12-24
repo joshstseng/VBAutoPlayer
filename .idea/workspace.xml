@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="remove is not removing from GUI">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="remove works">
+      <change afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +20,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentSearchFilters">
+      <list>
+        <option value="state:open" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,7 +80,9 @@
       <workItem from="1671571563070" duration="2299000" />
       <workItem from="1671574086325" duration="184000" />
       <workItem from="1671643953099" duration="7157000" />
-      <workItem from="1671821426544" duration="747000" />
+      <workItem from="1671821426544" duration="1876000" />
+      <workItem from="1671908703524" duration="758000" />
+      <workItem from="1671910243607" duration="2030000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -271,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671651086374</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="remove works">
+      <created>1671822475563</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1671822475563</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +312,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="able to make program open a url" />
     <MESSAGE value="started date class&#10;started video class" />
     <MESSAGE value="boom" />
     <MESSAGE value="wrote toString methods for Video and Date" />
@@ -314,7 +336,8 @@
     <MESSAGE value="clearButton works" />
     <MESSAGE value="playButton works" />
     <MESSAGE value="remove is not removing from GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove is not removing from GUI" />
+    <MESSAGE value="remove works" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,7 +17,8 @@ public class Main {
 
             Runner runner = new Runner(scan, playlist);
 
-            GUI gui = new GUI(runner);
+            //GUI gui = new GUI(runner);
+            guiUpdate gui = new guiUpdate(runner);
 
             runner.welcome();
 
