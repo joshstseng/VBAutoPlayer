@@ -1,10 +1,21 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 public class guiUpdate extends Frame {
 
+    ArrayList<String> labelTitles = new ArrayList<String>();
+
     Runner runner;
+    Panel top;
+    Panel middle;
+    Panel bot;
+    Button fillButton;
+    Button clearButton;
+    Label msgLabel;
+    TextField videoNameTF;
+    Label test;
 
     public guiUpdate(Runner runner) {
 
@@ -12,29 +23,32 @@ public class guiUpdate extends Frame {
 
         setLayout(new GridLayout(3, 1));
 
-        Panel top = new Panel(new FlowLayout(FlowLayout.CENTER));
-        Panel middle = new Panel(new GridLayout(3, 1));
-        Panel bot = new Panel(new GridLayout(10, 1));
+        top = new Panel(new FlowLayout(FlowLayout.CENTER));
+        middle = new Panel(new FlowLayout(FlowLayout.CENTER));
+        bot = new Panel(new GridLayout(10, 1));
+
+        // TODO action listeners for all buttons and text field
 
         // top components
-        Button fillButton = new Button("Fill");
-        Button clearButton = new Button("Clear");
+        fillButton = new Button("Fill");
+        fillButton.addActionListener(new fillButtonListener());
+
+        clearButton = new Button("Clear");
         top.add(fillButton);
         top.add(clearButton);
 
         // middle components
-        Label blankLabel = new Label("");
-        Label errorLabel = new Label("Link is invalid!"); // not added initially
-        Label successLabel = new Label("Video added!"); // not added initially
-        TextField videoNameTF = new TextField(60);
-        Button addButton = new Button("add");
-        addButton.setPreferredSize(new Dimension(3, 2));
-        middle.add(blankLabel); // add blank label
-        middle.add(videoNameTF);
-        middle.add(addButton);
+        msgLabel = new Label("");
+        String blank = "";
+        String error = "Link is invalid!";
+        String success = "Video added!";
+
+        videoNameTF = new TextField(50);
+        middle.add(msgLabel); // add blank label
+        middle.add(videoNameTF); // add text field
 
         // bottom components
-        Label test = new Label("bottom panel");
+        test = new Label("bottom panel");
         bot.add(test);
 
         // Frame
@@ -46,7 +60,21 @@ public class guiUpdate extends Frame {
         setVisible(true);
 
         addWindowListener(new MyWindowListener());
+    }
 
+    private class fillButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            runner.getPlaylist().fillPlaylist();
+            for (int i = runner.getPlaylist().getNumVids() - 3; i < runner.getPlaylist().getNumVids(); i++) {
+                String vidTitle = runner.getPlaylist().getVideoList().get(i).getTitle();
+                labelTitles.add(vidTitle);
+                bot.add(new Label(vidTitle));
+            }
+            bot.revalidate();
+            bot.repaint();
+            bot.setVisible(true);
+        }
     }
 
     private class MyWindowListener implements WindowListener {
