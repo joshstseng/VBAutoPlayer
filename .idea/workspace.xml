@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="remove works">
-      <change afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="new gui start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guiUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +80,7 @@
       <workItem from="1671643953099" duration="7157000" />
       <workItem from="1671821426544" duration="1876000" />
       <workItem from="1671908703524" duration="758000" />
-      <workItem from="1671910243607" duration="2030000" />
+      <workItem from="1671910243607" duration="2960000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -294,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671822475563</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="new gui start">
+      <created>1671912408720</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1671912408720</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +317,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="started date class&#10;started video class" />
     <MESSAGE value="boom" />
     <MESSAGE value="wrote toString methods for Video and Date" />
     <MESSAGE value="video stuff before C exam" />
@@ -337,7 +341,8 @@
     <MESSAGE value="playButton works" />
     <MESSAGE value="remove is not removing from GUI" />
     <MESSAGE value="remove works" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove works" />
+    <MESSAGE value="new gui start" />
+    <option name="LAST_COMMIT_MESSAGE" value="new gui start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
