@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 public class guiUpdate extends Frame {
@@ -15,6 +17,10 @@ public class guiUpdate extends Frame {
     Button clearButton;
     Label msgLabel;
     TextField videoNameTF;
+
+    String blank = "";
+    String error = "Link is invalid!";
+    String success = "Video added!";
 
     public guiUpdate(Runner runner) {
 
@@ -40,11 +46,11 @@ public class guiUpdate extends Frame {
 
         // middle components
         msgLabel = new Label("");
-        String blank = "";
-        String error = "Link is invalid!";
-        String success = "Video added!";
+
 
         videoNameTF = new TextField(50);
+        videoNameTF.addActionListener(new videoTFListener());
+
         middle.add(msgLabel); // add blank label
         middle.add(videoNameTF); // add text field
 
@@ -56,7 +62,7 @@ public class guiUpdate extends Frame {
         add(middle);
         add(bot);
         setTitle("Auto Player");
-        setSize(500, 500);
+        setSize(750, 500);
         setVisible(true);
 
         addWindowListener(new MyWindowListener());
@@ -93,6 +99,29 @@ public class guiUpdate extends Frame {
             bot.revalidate();
             bot.repaint();
             bot.setVisible(true);
+        }
+    }
+
+    private class videoTFListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+            try {
+                String link = videoNameTF.getText();
+                runner.addVideoLink(link);
+                String title = runner.getPlaylist().getVideoList().get(labelTitles.size()).getTitle();
+                labelTitles.add(title);
+                bot.add(new Label(title));
+                videoNameTF.setText("");
+                msgLabel.setText(success);
+                bot.revalidate();
+                bot.repaint();
+                bot.setVisible(true);
+            } catch (Exception l) {
+                System.out.println("Link is invalid");
+                msgLabel.setText(error);
+                l.printStackTrace();
+            }
         }
     }
 
