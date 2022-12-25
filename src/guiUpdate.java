@@ -142,6 +142,8 @@ public class guiUpdate extends Frame {
                 runner.addVideoLink(link);
                 String title = runner.getPlaylist().getVideoList().get(labelTitles.size()).getTitle();
                 labelTitles.add(title);
+
+                bot.add(new RemoveButton(title));
                 bot.add(new Label(title));
                 videoNameTF.setText("");
                 msgLabel.setText(success);
@@ -190,6 +192,50 @@ public class guiUpdate extends Frame {
         @Override
         public void windowDeactivated(WindowEvent e) {
 
+        }
+    }
+
+    private class RemoveButton extends Button {
+        String title;
+
+        public RemoveButton(String title) {
+            this.title = title;
+            new Button("X");
+            this.addActionListener(new removeButtonActionListener(title));
+        }
+
+        public String getTitle() {
+            return title;
+        }
+    }
+
+    private class removeButtonActionListener implements ActionListener {
+        String title;
+        public removeButtonActionListener(String title) {
+            this.title = title;
+        }
+
+        public void actionPerformed(ActionEvent e) {
+            Component[] componentList = bot.getComponents();
+            for (Component c : componentList) {
+                if (c instanceof Label) {
+                    if (((Label) c).getText().equals(title)) {
+                        bot.remove(c);
+                        for (Component k : componentList) {
+                            if (k instanceof RemoveButton) {
+                                if (((RemoveButton) k).getTitle().equals(title)) {
+                                    bot.remove(k);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            labelTitles.remove(title);
+            runner.removeVideo(title);
+            bot.revalidate();
+            bot.repaint();
+            bot.setVisible(true);
         }
     }
 
