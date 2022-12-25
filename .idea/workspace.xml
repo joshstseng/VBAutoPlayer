@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="remove added to fill and add funcs">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="clear clears all removeButtons and labels&#10;TODO: when there are duplicates it removes all dups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guiUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="c9ade1b6-f7be-4089-92a0-f8f7cf1b4a72" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="recentSearchFilters">
       <list>
@@ -41,14 +43,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +85,8 @@
       <workItem from="1671910243607" duration="3261000" />
       <workItem from="1671921613869" duration="1021000" />
       <workItem from="1671922642992" duration="4765000" />
-      <workItem from="1671931131835" duration="590000" />
+      <workItem from="1671931131835" duration="720000" />
+      <workItem from="1671931935008" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -351,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671926685584</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="clear clears all removeButtons and labels&#10;TODO: when there are duplicates it removes all dups">
+      <created>1671931831509</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1671931831509</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created runner class - will use scanner for input" />
     <MESSAGE value="need to catch all the errors and exceptions" />
     <MESSAGE value="finished most automation and exceptions" />
     <MESSAGE value="update todo" />
@@ -394,7 +403,8 @@
     <MESSAGE value="playButton done" />
     <MESSAGE value="removeButton done" />
     <MESSAGE value="remove added to fill and add funcs" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove added to fill and add funcs" />
+    <MESSAGE value="clear clears all removeButtons and labels&#10;TODO: when there are duplicates it removes all dups" />
+    <option name="LAST_COMMIT_MESSAGE" value="clear clears all removeButtons and labels&#10;TODO: when there are duplicates it removes all dups" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
