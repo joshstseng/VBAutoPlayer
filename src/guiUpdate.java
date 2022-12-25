@@ -31,7 +31,7 @@ public class guiUpdate extends Frame {
 
         top = new Panel(new FlowLayout(FlowLayout.CENTER));
         middle = new Panel(new FlowLayout(FlowLayout.CENTER));
-        bot = new Panel(new GridLayout(10, 1));
+        bot = new Panel(new GridLayout(10, 2, 2, 2));
 
         // TODO action listeners for all buttons and text field
 
@@ -106,6 +106,7 @@ public class guiUpdate extends Frame {
             for (int i = runner.getPlaylist().getNumVids() - 3; i < runner.getPlaylist().getNumVids(); i++) {
                 String vidTitle = runner.getPlaylist().getVideoList().get(i).getTitle();
                 labelTitles.add(vidTitle);
+                bot.add(new RemoveButton(vidTitle));
                 bot.add(new Label(vidTitle));
             }
             bot.revalidate();
