@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="removeButton done">
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="remove added to fill and add funcs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guiUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
     </list>
@@ -82,7 +82,8 @@
       <workItem from="1671908703524" duration="758000" />
       <workItem from="1671910243607" duration="3261000" />
       <workItem from="1671921613869" duration="1021000" />
-      <workItem from="1671922642992" duration="3964000" />
+      <workItem from="1671922642992" duration="4765000" />
+      <workItem from="1671931131835" duration="590000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -343,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671926500352</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="remove added to fill and add funcs">
+      <created>1671926685584</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1671926685584</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +369,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added playlist class" />
     <MESSAGE value="created runner class - will use scanner for input" />
     <MESSAGE value="need to catch all the errors and exceptions" />
     <MESSAGE value="finished most automation and exceptions" />
@@ -386,7 +393,8 @@
     <MESSAGE value="textField Listener done" />
     <MESSAGE value="playButton done" />
     <MESSAGE value="removeButton done" />
-    <option name="LAST_COMMIT_MESSAGE" value="removeButton done" />
+    <MESSAGE value="remove added to fill and add funcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove added to fill and add funcs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

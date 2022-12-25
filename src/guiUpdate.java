@@ -23,6 +23,9 @@ public class guiUpdate extends Frame {
     String error = "Link is invalid!";
     String success = "Video added!";
 
+    // TODO when there are dups, it removes all dups, not just the top one
+    // TODO maybe try removing by index, and not by title name ^^
+
     public guiUpdate(Runner runner) {
 
         this.runner = runner;
@@ -31,12 +34,9 @@ public class guiUpdate extends Frame {
 
         top = new Panel(new FlowLayout(FlowLayout.CENTER));
         middle = new Panel(new FlowLayout(FlowLayout.CENTER));
-        bot = new Panel(new GridLayout(10, 2, 2, 2));
-
-        // TODO action listeners for all buttons and text field
+        bot = new Panel(new GridLayout(0, 2));
 
         // top components
-
         playButton = new Button("Play Next");
         playButton.addActionListener(new playButtonListener());
 
@@ -122,7 +122,7 @@ public class guiUpdate extends Frame {
             Component[] componentList = bot.getComponents();
 
             for (Component c : componentList) {
-                if (c instanceof Label) {
+                if ((c instanceof Label) || (c instanceof RemoveButton)) {
                     bot.remove(c);
                 }
             }
@@ -217,8 +217,12 @@ public class guiUpdate extends Frame {
         }
 
         public void actionPerformed(ActionEvent e) {
+            boolean found = false;
             Component[] componentList = bot.getComponents();
             for (Component c : componentList) {
+                if (found) {
+                    break;
+                }
                 if (c instanceof Label) {
                     if (((Label) c).getText().equals(title)) {
                         bot.remove(c);
@@ -226,6 +230,7 @@ public class guiUpdate extends Frame {
                             if (k instanceof RemoveButton) {
                                 if (((RemoveButton) k).getTitle().equals(title)) {
                                     bot.remove(k);
+                                    break;
                                 }
                             }
                         }
