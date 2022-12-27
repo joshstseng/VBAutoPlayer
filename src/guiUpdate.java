@@ -198,18 +198,24 @@ public class guiUpdate extends Frame {
 
     private class RemoveButton extends Button {
         String title;
+        int labelIndex;
 
         public RemoveButton(String title) {
             this.title = title;
             new Button("X");
             this.addActionListener(new removeButtonActionListener(title));
+            this.labelIndex = labelTitles.size();
         }
 
         public String getTitle() {
             return title;
         }
-    }
 
+        public int getLabelIndex() {
+            return labelIndex;
+        }
+    }
+    // TODO remove by index and title instead of just title
     private class removeButtonActionListener implements ActionListener {
         String title;
         public removeButtonActionListener(String title) {
@@ -225,6 +231,7 @@ public class guiUpdate extends Frame {
                 }
                 if (c instanceof Label) {
                     if (((Label) c).getText().equals(title)) {
+
                         bot.remove(c);
                         for (Component k : componentList) {
                             if (k instanceof RemoveButton) {
