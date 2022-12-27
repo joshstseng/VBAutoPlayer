@@ -215,6 +215,7 @@ public class guiUpdate extends Frame {
             return labelIndex;
         }
     }
+    // test
     // TODO remove by index and title instead of just title
     private class removeButtonActionListener implements ActionListener {
         String title;
