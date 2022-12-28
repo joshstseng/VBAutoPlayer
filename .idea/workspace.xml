@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="test profile" />
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "configurable.group.editor"
   }
 }]]></component>
@@ -86,6 +87,7 @@
       <workItem from="1671931131835" duration="720000" />
       <workItem from="1671931935008" duration="244000" />
       <workItem from="1672125047696" duration="909000" />
+      <workItem from="1672169109981" duration="191000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -388,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672125912116</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="test">
+      <created>1672169278851</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1672169278851</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +415,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="wrote playPlaylist" />
     <MESSAGE value="start fillPlaylist()" />
     <MESSAGE value="finished fillPlaylist" />
     <MESSAGE value="started the gui" />
@@ -431,7 +439,8 @@
     <MESSAGE value="update github profile" />
     <MESSAGE value="started implementing index into remove&#10;TODO implement remove by index + title" />
     <MESSAGE value="test profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="test profile" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
