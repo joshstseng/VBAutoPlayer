@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="test" />
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="c9ade1b6-f7be-4089-92a0-f8f7cf1b4a72" />
+    <option name="defaultAccountId" value="d87f1973-9fc8-4e29-a354-02da377012fa" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="recentSearchFilters">
@@ -47,10 +49,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.editor"
+    "settings.editor.selected.configurable": "vcs.Subversion.Network"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="" />
@@ -88,6 +93,7 @@
       <workItem from="1671931935008" duration="244000" />
       <workItem from="1672125047696" duration="909000" />
       <workItem from="1672169109981" duration="191000" />
+      <workItem from="1672189678374" duration="478000" />
     </task>
     <task id="LOCAL-00001" summary="created project">
       <created>1670714836430</created>
@@ -397,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672169278851</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="test">
+      <created>1672189794936</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1672189794936</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,6 +454,7 @@
     <MESSAGE value="test profile" />
     <MESSAGE value="test" />
     <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
