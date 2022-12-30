@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="fixed removing when dups">
-      <change afterPath="$PROJECT_DIR$/src/HighlightedButton.java" afterDir="false" />
+    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="imported HighlightedButton">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guiUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guiUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HighlightedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HighlightedButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +96,7 @@
       <workItem from="1672125047696" duration="909000" />
       <workItem from="1672169109981" duration="191000" />
       <workItem from="1672189678374" duration="776000" />
-      <workItem from="1672428851473" duration="805000" />
-    </task>
-    <task id="LOCAL-00001" summary="created project">
-      <created>1670714836430</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1670714836430</updated>
+      <workItem from="1672428851473" duration="1312000" />
     </task>
     <task id="LOCAL-00002" summary="created project">
       <created>1670714943394</created>
@@ -441,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672429282904</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="imported HighlightedButton">
+      <created>1672429693348</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1672429693355</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finished fillPlaylist" />
     <MESSAGE value="started the gui" />
     <MESSAGE value="gui update addVideo" />
     <MESSAGE value="finished addBUtton" />
@@ -484,7 +483,8 @@
     <MESSAGE value="test profile" />
     <MESSAGE value="test" />
     <MESSAGE value="fixed removing when dups" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed removing when dups" />
+    <MESSAGE value="imported HighlightedButton" />
+    <option name="LAST_COMMIT_MESSAGE" value="imported HighlightedButton" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

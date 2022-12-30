@@ -46,7 +46,9 @@ import java.awt.image.BufferedImage;
  */
 public class HighlightedButton extends JButton {
 
-    static final int HIGHLIGHT_SIZE = 18;
+    private static final int HIGHLIGHT_SIZE = 18;
+
+    private Color[] colors;
 
     BufferedImage highlight = new BufferedImage(HIGHLIGHT_SIZE, HIGHLIGHT_SIZE,
             BufferedImage.TYPE_INT_ARGB);
@@ -69,11 +71,16 @@ public class HighlightedButton extends JButton {
         Point2D center = new Point2D.Float((float) HIGHLIGHT_SIZE / 2.0f, (float) HIGHLIGHT_SIZE / 2.0f);
         float radius = (float) HIGHLIGHT_SIZE / 2.0f;
         float[] dist = { 0.0f, .85f };
-        Color[] colors = { Color.white, new Color(255, 255, 255, 0) }; // TODO
+        colors = new Color[]{Color.white, new Color(255, 255, 255, 0)}; // TODO
         RadialGradientPaint paint = new RadialGradientPaint(center, radius, dist, colors);
         g2d.setPaint(paint);
         g2d.fillOval(0, 0, HIGHLIGHT_SIZE, HIGHLIGHT_SIZE);
         g2d.dispose();
+    }
+
+    // form: new Color[]{Color.white, new Color(255, 255, 255, 0)};
+    public void setColors(Color[] colors) {
+        this.colors = colors;
     }
 
     @Override
@@ -92,13 +99,14 @@ public class HighlightedButton extends JButton {
         f.setVisible(true);
     }
 
+    /*
     public static void main(String args[]) {
         Runnable doCreateAndShowGUI = new Runnable() {
             public void run() {
                 createAndShowGUI();
             }
         };
-        SwingUtilities.invokeLater(doCreateAndShowGUI);
-    }
+        //SwingUtilities.invokeLater(doCreateAndShowGUI);
+    }*/
 
 }
