@@ -19,7 +19,6 @@ public class guiUpdate extends Frame {
     Label msgLabel;
     TextField videoNameTF;
 
-    String blank = "";
     String error = "Link is invalid!";
     String success = "Video added!";
 
@@ -198,25 +197,18 @@ public class guiUpdate extends Frame {
 
     private class RemoveButton extends Button {
         String title;
-        int labelIndex;
 
         public RemoveButton(String title) {
             this.title = title;
             new Button("X");
             this.addActionListener(new removeButtonActionListener(title));
-            this.labelIndex = labelTitles.size();
         }
 
         public String getTitle() {
             return title;
         }
 
-        public int getLabelIndex() {
-            return labelIndex;
-        }
     }
-        // test commit
-    // TODO remove by index and title instead of just title
     private class removeButtonActionListener implements ActionListener {
         String title;
         public removeButtonActionListener(String title) {
@@ -237,6 +229,7 @@ public class guiUpdate extends Frame {
                         for (Component k : componentList) {
                             if (k instanceof RemoveButton) {
                                 if (((RemoveButton) k).getTitle().equals(title)) {
+                                    found = true;
                                     bot.remove(k);
                                     break;
                                 }
