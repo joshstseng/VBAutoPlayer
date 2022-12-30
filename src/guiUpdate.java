@@ -22,9 +22,6 @@ public class guiUpdate extends Frame {
     String error = "Link is invalid!";
     String success = "Video added!";
 
-    // TODO when there are dups, it removes all dups, not just the top one
-    // TODO maybe try removing by index, and not by title name ^^
-
     public guiUpdate(Runner runner) {
 
         this.runner = runner;
