@@ -1,0 +1,293 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"94dff7fd-efdf-4a89-be0f-aeca9e17d01f\" name=\"Changes\" comment=\"remove is not removing from GUI\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/GUI.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/GUI.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2Ik9ersa80oFaUGQ0MCAQKXYwzv\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"94dff7fd-efdf-4a89-be0f-aeca9e17d01f\" name=\"Changes\" comment=\"\" />\n      <created>1670714813172</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1670714813172</updated>\n      <workItem from=\"1670714816397\" duration=\"2566000\" />\n      <workItem from=\"1670718423637\" duration=\"608000\" />\n      <workItem from=\"1670733851059\" duration=\"988000\" />\n      <workItem from=\"1670769401759\" duration=\"1057000\" />\n      <workItem from=\"1670859738191\" duration=\"734000\" />\n      <workItem from=\"1670967501186\" duration=\"931000\" />\n      <workItem from=\"1670968697994\" duration=\"635000\" />\n      <workItem from=\"1671036315719\" duration=\"234000\" />\n      <workItem from=\"1671132235424\" duration=\"5863000\" />\n      <workItem from=\"1671197143901\" duration=\"5339000\" />\n      <workItem from=\"1671206163708\" duration=\"881000\" />\n      <workItem from=\"1671306646398\" duration=\"1163000\" />\n      <workItem from=\"1671482771944\" duration=\"2326000\" />\n      <workItem from=\"1671499492080\" duration=\"3178000\" />\n      <workItem from=\"1671563029610\" duration=\"3281000\" />\n      <workItem from=\"1671566328118\" duration=\"29000\" />\n      <workItem from=\"1671567700302\" duration=\"520000\" />\n      <workItem from=\"1671568286135\" duration=\"233000\" />\n      <workItem from=\"1671571563070\" duration=\"2299000\" />\n      <workItem from=\"1671574086325\" duration=\"184000\" />\n      <workItem from=\"1671643953099\" duration=\"7157000\" />\n      <workItem from=\"1671821426544\" duration=\"747000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"created project\">\n      <created>1670714836430</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670714836430</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"created project\">\n      <created>1670714943394</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670714943394</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"created project and merged to github\">\n      <created>1670714996852</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670714996852</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"able to make program open a url\">\n      <created>1670715567175</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670715567175</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"started date class&#10;started video class\">\n      <created>1670716785927</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670716785927</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"started date class&#10;started video class\">\n      <created>1670719024100</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670719024100</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"boom\">\n      <created>1670734831708</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670734831708</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"wrote toString methods for Video and Date\">\n      <created>1670770421113</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670770421114</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"video stuff before C exam\">\n      <created>1670860466855</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670860466856</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"figured out how to read the HTML, need to strip the title from the HTML\">\n      <created>1670968387083</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1670968387084</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"wrote stripTitle function\">\n      <created>1671135114771</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671135114771</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"edit toString\">\n      <created>1671135261669</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671135261669</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"added playlist class\">\n      <created>1671137084437</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671137084437</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"created runner class - will use scanner for input\">\n      <created>1671201126880</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671201126881</updated>\n    </task>\n    <task id=\"LOCAL-00015\" summary=\"need to catch all the errors and exceptions\">\n      <created>1671204616069</created>\n      <option name=\"number\" value=\"00015\" />\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671204616069</updated>\n    </task>\n    <task id=\"LOCAL-00016\" summary=\"finished most automation and exceptions\">\n      <created>1671206057813</created>\n      <option name=\"number\" value=\"00016\" />\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671206057813</updated>\n    </task>\n    <task id=\"LOCAL-00017\" summary=\"update todo\">\n      <created>1671307274333</created>\n      <option name=\"number\" value=\"00017\" />\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671307274334</updated>\n    </task>\n    <task id=\"LOCAL-00018\" summary=\"wrote playPlaylist\">\n      <created>1671483547393</created>\n      <option name=\"number\" value=\"00018\" />\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671483547394</updated>\n    </task>\n    <task id=\"LOCAL-00019\" summary=\"start fillPlaylist()\">\n      <created>1671484551711</created>\n      <option name=\"number\" value=\"00019\" />\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671484551711</updated>\n    </task>\n    <task id=\"LOCAL-00020\" summary=\"finished fillPlaylist\">\n      <created>1671501827400</created>\n      <option name=\"number\" value=\"00020\" />\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671501827400</updated>\n    </task>\n    <task id=\"LOCAL-00021\" summary=\"started the gui\">\n      <created>1671563835657</created>\n      <option name=\"number\" value=\"00021\" />\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671563835657</updated>\n    </task>\n    <task id=\"LOCAL-00022\" summary=\"gui update addVideo\">\n      <created>1671566348808</created>\n      <option name=\"number\" value=\"00022\" />\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671566348808</updated>\n    </task>\n    <task id=\"LOCAL-00023\" summary=\"finished addBUtton\">\n      <created>1671568515300</created>\n      <option name=\"number\" value=\"00023\" />\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671568515300</updated>\n    </task>\n    <task id=\"LOCAL-00024\" summary=\"add labels dynamically when addVideo\">\n      <created>1671573822050</created>\n      <option name=\"number\" value=\"00024\" />\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671573822051</updated>\n    </task>\n    <task id=\"LOCAL-00025\" summary=\"fillPlaylist Button and added arrayList instead of arrays\">\n      <created>1671646817628</created>\n      <option name=\"number\" value=\"00025\" />\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671646817628</updated>\n    </task>\n    <task id=\"LOCAL-00026\" summary=\"start clearButton\">\n      <created>1671648063325</created>\n      <option name=\"number\" value=\"00026\" />\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671648063325</updated>\n    </task>\n    <task id=\"LOCAL-00027\" summary=\"clearButton works\">\n      <created>1671648120982</created>\n      <option name=\"number\" value=\"00027\" />\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671648120982</updated>\n    </task>\n    <task id=\"LOCAL-00028\" summary=\"playButton works\">\n      <created>1671649883234</created>\n      <option name=\"number\" value=\"00028\" />\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671649883235</updated>\n    </task>\n    <task id=\"LOCAL-00029\" summary=\"remove is not removing from GUI\">\n      <created>1671651086374</created>\n      <option name=\"number\" value=\"00029\" />\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1671651086374</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"30\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"able to make program open a url\" />\n    <MESSAGE value=\"started date class&#10;started video class\" />\n    <MESSAGE value=\"boom\" />\n    <MESSAGE value=\"wrote toString methods for Video and Date\" />\n    <MESSAGE value=\"video stuff before C exam\" />\n    <MESSAGE value=\"figured out how to read the HTML, need to strip the title from the HTML\" />\n    <MESSAGE value=\"wrote stripTitle function\" />\n    <MESSAGE value=\"edit toString\" />\n    <MESSAGE value=\"added playlist class\" />\n    <MESSAGE value=\"created runner class - will use scanner for input\" />\n    <MESSAGE value=\"need to catch all the errors and exceptions\" />\n    <MESSAGE value=\"finished most automation and exceptions\" />\n    <MESSAGE value=\"update todo\" />\n    <MESSAGE value=\"wrote playPlaylist\" />\n    <MESSAGE value=\"start fillPlaylist()\" />\n    <MESSAGE value=\"finished fillPlaylist\" />\n    <MESSAGE value=\"started the gui\" />\n    <MESSAGE value=\"gui update addVideo\" />\n    <MESSAGE value=\"finished addBUtton\" />\n    <MESSAGE value=\"add labels dynamically when addVideo\" />\n    <MESSAGE value=\"fillPlaylist Button and added arrayList instead of arrays\" />\n    <MESSAGE value=\"start clearButton\" />\n    <MESSAGE value=\"clearButton works\" />\n    <MESSAGE value=\"playButton works\" />\n    <MESSAGE value=\"remove is not removing from GUI\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"remove is not removing from GUI\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <default-breakpoints>\n        <breakpoint enabled=\"true\" type=\"java-exception\" />\n      </default-breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3d747b711460ccbbd5aa4896ecf912e8511e6814)
++++ b/.idea/workspace.xml	(date 1672685221182)
+@@ -1,9 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="remove is not removing from GUI">
++    <list default="true" id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="imported HighlightedButton">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/HighlightedButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HighlightedButton.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -18,7 +19,22 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GithubDefaultAccount">
++    <option name="defaultAccountId" value="d87f1973-9fc8-4e29-a354-02da377012fa" />
++  </component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="recentSearchFilters">
++      <list>
++        <option value="state:open" />
++      </list>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -34,10 +50,14 @@
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Subversion.Network&quot;
+   }
+ }</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="SvnConfiguration">
++    <configuration>$USER_HOME$/.subversion</configuration>
++  </component>
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+       <changelist id="94dff7fd-efdf-4a89-be0f-aeca9e17d01f" name="Changes" comment="" />
+@@ -66,14 +86,17 @@
+       <workItem from="1671571563070" duration="2299000" />
+       <workItem from="1671574086325" duration="184000" />
+       <workItem from="1671643953099" duration="7157000" />
+-      <workItem from="1671821426544" duration="747000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="created project">
+-      <created>1670714836430</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1670714836430</updated>
++      <workItem from="1671821426544" duration="1876000" />
++      <workItem from="1671908703524" duration="758000" />
++      <workItem from="1671910243607" duration="3261000" />
++      <workItem from="1671921613869" duration="1021000" />
++      <workItem from="1671922642992" duration="4765000" />
++      <workItem from="1671931131835" duration="720000" />
++      <workItem from="1671931935008" duration="244000" />
++      <workItem from="1672125047696" duration="909000" />
++      <workItem from="1672169109981" duration="191000" />
++      <workItem from="1672189678374" duration="776000" />
++      <workItem from="1672428851473" duration="1312000" />
+     </task>
+     <task id="LOCAL-00002" summary="created project">
+       <created>1670714943394</created>
+@@ -271,7 +294,154 @@
+       <option name="project" value="LOCAL" />
+       <updated>1671651086374</updated>
+     </task>
+-    <option name="localTasksCounter" value="30" />
++    <task id="LOCAL-00030" summary="remove works">
++      <created>1671822475563</created>
++      <option name="number" value="00030" />
++      <option name="presentableId" value="LOCAL-00030" />
++      <option name="project" value="LOCAL" />
++      <updated>1671822475563</updated>
++    </task>
++    <task id="LOCAL-00031" summary="new gui start">
++      <created>1671912408720</created>
++      <option name="number" value="00031" />
++      <option name="presentableId" value="LOCAL-00031" />
++      <option name="project" value="LOCAL" />
++      <updated>1671912408720</updated>
++    </task>
++    <task id="LOCAL-00032" summary="center the top and change rows/cols">
++      <created>1671913512368</created>
++      <option name="number" value="00032" />
++      <option name="presentableId" value="LOCAL-00032" />
++      <option name="project" value="LOCAL" />
++      <updated>1671913512368</updated>
++    </task>
++    <task id="LOCAL-00033" summary="fillButton done">
++      <created>1671923584343</created>
++      <option name="number" value="00033" />
++      <option name="presentableId" value="LOCAL-00033" />
++      <option name="project" value="LOCAL" />
++      <updated>1671923584343</updated>
++    </task>
++    <task id="LOCAL-00034" summary="clearButton done">
++      <created>1671924014300</created>
++      <option name="number" value="00034" />
++      <option name="presentableId" value="LOCAL-00034" />
++      <option name="project" value="LOCAL" />
++      <updated>1671924014300</updated>
++    </task>
++    <task id="LOCAL-00035" summary="textField Listener done">
++      <created>1671924869613</created>
++      <option name="number" value="00035" />
++      <option name="presentableId" value="LOCAL-00035" />
++      <option name="project" value="LOCAL" />
++      <updated>1671924869613</updated>
++    </task>
++    <task id="LOCAL-00036" summary="playButton done">
++      <created>1671925284103</created>
++      <option name="number" value="00036" />
++      <option name="presentableId" value="LOCAL-00036" />
++      <option name="project" value="LOCAL" />
++      <updated>1671925284103</updated>
++    </task>
++    <task id="LOCAL-00037" summary="removeButton done">
++      <created>1671926500352</created>
++      <option name="number" value="00037" />
++      <option name="presentableId" value="LOCAL-00037" />
++      <option name="project" value="LOCAL" />
++      <updated>1671926500352</updated>
++    </task>
++    <task id="LOCAL-00038" summary="remove added to fill and add funcs">
++      <created>1671926685584</created>
++      <option name="number" value="00038" />
++      <option name="presentableId" value="LOCAL-00038" />
++      <option name="project" value="LOCAL" />
++      <updated>1671926685584</updated>
++    </task>
++    <task id="LOCAL-00039" summary="clear clears all removeButtons and labels&#10;TODO: when there are duplicates it removes all dups">
++      <created>1671931831509</created>
++      <option name="number" value="00039" />
++      <option name="presentableId" value="LOCAL-00039" />
++      <option name="project" value="LOCAL" />
++      <updated>1671931831509</updated>
++    </task>
++    <task id="LOCAL-00040" summary="update github profile">
++      <created>1671932033786</created>
++      <option name="number" value="00040" />
++      <option name="presentableId" value="LOCAL-00040" />
++      <option name="project" value="LOCAL" />
++      <updated>1671932033787</updated>
++    </task>
++    <task id="LOCAL-00041" summary="started implementing index into remove&#10;TODO implement remove by index + title">
++      <created>1672125472172</created>
++      <option name="number" value="00041" />
++      <option name="presentableId" value="LOCAL-00041" />
++      <option name="project" value="LOCAL" />
++      <updated>1672125472173</updated>
++    </task>
++    <task id="LOCAL-00042" summary="started implementing index into remove&#10;TODO implement remove by index + title">
++      <created>1672125638073</created>
++      <option name="number" value="00042" />
++      <option name="presentableId" value="LOCAL-00042" />
++      <option name="project" value="LOCAL" />
++      <updated>1672125638073</updated>
++    </task>
++    <task id="LOCAL-00043" summary="test profile">
++      <created>1672125912116</created>
++      <option name="number" value="00043" />
++      <option name="presentableId" value="LOCAL-00043" />
++      <option name="project" value="LOCAL" />
++      <updated>1672125912116</updated>
++    </task>
++    <task id="LOCAL-00044" summary="test">
++      <created>1672169278851</created>
++      <option name="number" value="00044" />
++      <option name="presentableId" value="LOCAL-00044" />
++      <option name="project" value="LOCAL" />
++      <updated>1672169278851</updated>
++    </task>
++    <task id="LOCAL-00045" summary="test">
++      <created>1672189794936</created>
++      <option name="number" value="00045" />
++      <option name="presentableId" value="LOCAL-00045" />
++      <option name="project" value="LOCAL" />
++      <updated>1672189794936</updated>
++    </task>
++    <task id="LOCAL-00046" summary="test">
++      <created>1672190231195</created>
++      <option name="number" value="00046" />
++      <option name="presentableId" value="LOCAL-00046" />
++      <option name="project" value="LOCAL" />
++      <updated>1672190231195</updated>
++    </task>
++    <task id="LOCAL-00047" summary="test">
++      <created>1672190330622</created>
++      <option name="number" value="00047" />
++      <option name="presentableId" value="LOCAL-00047" />
++      <option name="project" value="LOCAL" />
++      <updated>1672190330622</updated>
++    </task>
++    <task id="LOCAL-00048" summary="test">
++      <created>1672190423369</created>
++      <option name="number" value="00048" />
++      <option name="presentableId" value="LOCAL-00048" />
++      <option name="project" value="LOCAL" />
++      <updated>1672190423369</updated>
++    </task>
++    <task id="LOCAL-00049" summary="fixed removing when dups">
++      <created>1672429282904</created>
++      <option name="number" value="00049" />
++      <option name="presentableId" value="LOCAL-00049" />
++      <option name="project" value="LOCAL" />
++      <updated>1672429282904</updated>
++    </task>
++    <task id="LOCAL-00050" summary="imported HighlightedButton">
++      <created>1672429693348</created>
++      <option name="number" value="00050" />
++      <option name="presentableId" value="LOCAL-00050" />
++      <option name="project" value="LOCAL" />
++      <updated>1672429693355</updated>
++    </task>
++    <option name="localTasksCounter" value="51" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -289,22 +459,6 @@
+     </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="able to make program open a url" />
+-    <MESSAGE value="started date class&#10;started video class" />
+-    <MESSAGE value="boom" />
+-    <MESSAGE value="wrote toString methods for Video and Date" />
+-    <MESSAGE value="video stuff before C exam" />
+-    <MESSAGE value="figured out how to read the HTML, need to strip the title from the HTML" />
+-    <MESSAGE value="wrote stripTitle function" />
+-    <MESSAGE value="edit toString" />
+-    <MESSAGE value="added playlist class" />
+-    <MESSAGE value="created runner class - will use scanner for input" />
+-    <MESSAGE value="need to catch all the errors and exceptions" />
+-    <MESSAGE value="finished most automation and exceptions" />
+-    <MESSAGE value="update todo" />
+-    <MESSAGE value="wrote playPlaylist" />
+-    <MESSAGE value="start fillPlaylist()" />
+-    <MESSAGE value="finished fillPlaylist" />
+     <MESSAGE value="started the gui" />
+     <MESSAGE value="gui update addVideo" />
+     <MESSAGE value="finished addBUtton" />
+@@ -314,7 +468,24 @@
+     <MESSAGE value="clearButton works" />
+     <MESSAGE value="playButton works" />
+     <MESSAGE value="remove is not removing from GUI" />
+-    <option name="LAST_COMMIT_MESSAGE" value="remove is not removing from GUI" />
++    <MESSAGE value="remove works" />
++    <MESSAGE value="new gui start" />
++    <MESSAGE value="center the top and change rows/cols" />
++    <MESSAGE value="fillButton done" />
++    <MESSAGE value="clearButton done" />
++    <MESSAGE value="textField Listener done" />
++    <MESSAGE value="playButton done" />
++    <MESSAGE value="removeButton done" />
++    <MESSAGE value="remove added to fill and add funcs" />
++    <MESSAGE value="clear clears all removeButtons and labels&#10;TODO: when there are duplicates it removes all dups" />
++    <MESSAGE value="update github profile" />
++    <MESSAGE value="started implementing index into remove&#10;TODO implement remove by index + title" />
++    <MESSAGE value="test profile" />
++    <MESSAGE value="test" />
++    <MESSAGE value="fixed removing when dups" />
++    <MESSAGE value="imported HighlightedButton" />
++    <option name="LAST_COMMIT_MESSAGE" value="imported HighlightedButton" />
++    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
