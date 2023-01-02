@@ -13,7 +13,6 @@ The intended purpose of the program is to strip the most recently posted videos 
 ---
 
 #### current TODO:
-- make it more user friendly
-  - make remove more user friendly
+- make it more user friendly and visually attractive
 - be able to resort by date videos were posted
 - be able to swap videos in the playlist queue
