@@ -1,4 +1,4 @@
-# VBAutoPlayer
+# YouTube AutoPlayer
 
 ## Work in progress - Prototype
 ### Last Updated: 1/2/2023 - 10:50AM
