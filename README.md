@@ -1,4 +1,4 @@
-# YouTube AutoPlayer
+# YouTube Auto Player
 
 ## Work in progress - Prototype
 ### Last Updated: 1/2/2023 - 10:50AM
