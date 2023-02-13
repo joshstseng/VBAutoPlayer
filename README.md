@@ -8,7 +8,16 @@
 
 #### Description:
 Prototype Program using java.awt Frame and Window to create an "AutoPlayer" for volleyball videos.
+
 The intended purpose of the program is to strip the most recently posted videos from the given channels in the program (currently NCAA Championships, Out of System, and AVP Beach Volleyball). The user then has options to play the videos, resort, clear, and remove videos from the playlist.
+
+Functions:
+- Fill the playlist (w/ internally saved channels - currently: NCAA, OOS, AVP)
+- Add Video Link
+- Remove Videos
+- Clear the playlist
+- Play next video in playlist
+- Close the player
 
 ---
 
