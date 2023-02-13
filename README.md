@@ -1,7 +1,7 @@
 # YouTube Auto Player
 
 ## Work in progress - Prototype
-### Last Updated: 1/2/2023 - 10:50AM
+### Last Updated: 2/12/2023 - 9:15PM
 ### Author: Josh Tseng
 
 ---
